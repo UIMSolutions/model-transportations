@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/model-transportations
+model-transportations.so
+model-transportations.dylib
+model-transportations.dll
+model-transportations.a
+model-transportations.lib
+model-transportations-test-*
+*.exe
+*.o
+*.obj
+*.lst
