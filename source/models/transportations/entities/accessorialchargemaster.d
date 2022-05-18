@@ -14,8 +14,8 @@ class DTransportationAccessorialChargeMasterEntity : DOOPEntity {
         "MasterCode": StringAttribute, //
         "ChargeMasterType": StringAttribute, //
         "MasterDescription": StringAttribute, //
-        "BackingTable_TMSAccessorialMasterRelationshipId": StringAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "BackingTable_TMSAccessorialMasterRelationshipId": UUIDAttribute, //
+        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_accessorialchargemasters");
   }

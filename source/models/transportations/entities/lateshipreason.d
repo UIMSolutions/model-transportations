@@ -1,31 +1,31 @@
-module models.transportations.entities.carriers.fuelindex;
+module models.transportations.entities.inventoryfreightcharge;
 
 @safe:
 import models.transportations;
 
-class DTransportationCarrierFuelIndexEntity : DOOPEntity {
-  mixin(EntityThis!("TransportationCarrierFuelIndexEntity"));
+class DTransportationLateShipReasonEntity : DOOPEntity {
+  mixin(EntityThis!("TransportationLateShipReasonEntity"));
 
   override void initialize() {
     super.initialize;
 
     this
       .addValues([
-        "IndexCode": StringAttribute, //
-        "IndexDescription": StringAttribute, //
-        "BackingTable_TMSCarrierFuelIndexTableRelationshipId": UUIDAttribute, //
+        "ReasonCode": StringAttribute, //
+        "ReasonDescription": StringAttribute, //
+        "BackingTable_TMSLateShipReasonRelationshipId": UUIDAttribute, //
         "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("transportation_carrierfuelindexes");
+      .registerPath("transportation_lateshipreasons");
   }
 }
-mixin(EntityCalls!("TransportationCarrierFuelIndexEntity"));
+mixin(EntityCalls!("TransportationLateShipReasonEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(TMSCarrierFuelIndexEntity);
+    assert(TransportationLateShipReasonEntity);
   
-  auto entity = TMSCarrierFuelIndexEntity;
+  auto entity = TransportationLateShipReasonEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

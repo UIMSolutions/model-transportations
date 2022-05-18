@@ -1,4 +1,4 @@
-module models.transportations.entities.carriers.fuelindex;
+module models.transportations.entities.carriers.fuelindexline;
 
 @safe:
 import models.transportations;
@@ -18,8 +18,8 @@ class DTransportationCarrierFuelIndexLineEntity : DOOPEntity {
         "PriceCurrencyCode": StringAttribute, //
         "AccessorialUnitPercentage": StringAttribute, //
         "FreightSurchargeFlatRate": StringAttribute, //
-        "BackingTable_TMSCarrierFuelIndexLineRelationshipId": StringAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "BackingTable_TMSCarrierFuelIndexLineRelationshipId": UUIDAttribute, //
+        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_carrierfuelindexes");
   }

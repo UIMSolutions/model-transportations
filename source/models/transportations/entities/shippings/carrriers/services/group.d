@@ -1,31 +1,31 @@
-module models.transportations.entities.carriers.fuelindex;
+module models.transportations.entities.shippings.carriers;
 
 @safe:
 import models.transportations;
 
-class DTransportationCarrierFuelIndexEntity : DOOPEntity {
-  mixin(EntityThis!("TransportationCarrierFuelIndexEntity"));
+class DShippingCarrierServiceGroupEntity : DOOPEntity {
+  mixin(EntityThis!("ShippingCarrierServiceGroupEntity"));
 
   override void initialize() {
     super.initialize;
 
     this
       .addValues([
-        "IndexCode": StringAttribute, //
-        "IndexDescription": StringAttribute, //
-        "BackingTable_TMSCarrierFuelIndexTableRelationshipId": UUIDAttribute, //
+        "GroupId": UUIDAttribute, //
+        "GroupName": StringAttribute, //
+        "BackingTable_TMSCarrierGroupRelationshipId": UUIDAttribute, //
         "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("transportation_carrierfuelindexes");
+      .registerPath("transportation_shippingcarrierservicegroups");
   }
 }
-mixin(EntityCalls!("TransportationCarrierFuelIndexEntity"));
+mixin(EntityCalls!("ShippingCarrierServiceGroupEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(TMSCarrierFuelIndexEntity);
+    assert(ShippingCarrierServiceGroupEntity);
   
-  auto entity = TMSCarrierFuelIndexEntity;
+  auto entity = ShippingCarrierServiceGroupEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
