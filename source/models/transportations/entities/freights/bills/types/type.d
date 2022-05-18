@@ -1,4 +1,4 @@
-module models.transportations.entities.freights.bills.typedetail;
+module models.transportations.entities.freights.bills.types.type;
 
 @safe:
 import models.transportations;

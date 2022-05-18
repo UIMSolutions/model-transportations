@@ -1,4 +1,4 @@
-module models.transportations.entities.freights.invoices.header;
+module models.transportations.entities.freights.invoices.line;
 
 @safe:
 import models.transportations;

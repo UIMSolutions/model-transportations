@@ -1,6 +1,3 @@
-module models.transportations.entities.freights.bills;
+module models.transportations.entities.freights.bills.matchingaudits;
 
-public import models.transportations.entities.freights.bills.detail;
-public import models.transportations.entities.freights.bills.detail;
-public import models.transportations.entities.freights.bills.detail;
-public import models.transportations.entities.freights.bills.detail;
+public import models.transportations.entities.freights.bills.matchingaudits.tolerancelevels;

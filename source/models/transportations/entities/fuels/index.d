@@ -1,4 +1,4 @@
-module models.transportations.entities.fuels;
+module models.transportations.entities.fuels.index;
 
 @safe:
 import models.transportations;
