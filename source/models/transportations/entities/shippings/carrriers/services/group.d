@@ -3,8 +3,8 @@ module models.transportations.entities.shippings.carriers;
 @safe:
 import models.transportations;
 
-class DShippingCarrierServiceGroupEntity : DOOPEntity {
-  mixin(EntityThis!("ShippingCarrierServiceGroupEntity"));
+class DTransportationShippingCarrierServiceGroupEntity : DOOPEntity {
+  mixin(EntityThis!("TransportationShippingCarrierServiceGroupEntity"));
 
   override void initialize() {
     super.initialize;
@@ -19,13 +19,13 @@ class DShippingCarrierServiceGroupEntity : DOOPEntity {
       .registerPath("transportation_shippingcarrierservicegroups");
   }
 }
-mixin(EntityCalls!("ShippingCarrierServiceGroupEntity"));
+mixin(EntityCalls!("TransportationShippingCarrierServiceGroupEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(ShippingCarrierServiceGroupEntity);
+    assert(TransportationShippingCarrierServiceGroupEntity);
   
-  auto entity = ShippingCarrierServiceGroupEntity;
+  auto entity = TransportationShippingCarrierServiceGroupEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
