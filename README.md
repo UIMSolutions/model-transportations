@@ -1,3 +1,3 @@
 # model-transportations
 
-Model for projects in transport management l
+Model for projects in transport management
