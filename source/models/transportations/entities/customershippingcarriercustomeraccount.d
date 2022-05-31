@@ -11,11 +11,11 @@ class DTransportationCustomerShippingCarrierCustomerAccountEntity : DOOPEntity {
 
     this
       .addValues([
-        "CustomerAccountNumber": StringAttribute, //
-        "ShippingCarrierCustomerAccountNumber": StringAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "BackingTable_TMSShippingCarrierCustomerAccountRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "customerAccountNumber": StringAttribute, //
+        "shippingCarrierCustomerAccountNumber": StringAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "backingTable_TMSShippingCarrierCustomerAccountRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_customershippingcarriercustomeraccounts");
   }
