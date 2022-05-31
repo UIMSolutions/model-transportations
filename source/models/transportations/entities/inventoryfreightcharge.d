@@ -11,49 +11,43 @@ class DTransportationInventoryFreightChargeEntity : DOOPEntity {
 
     this
       .addValues([
-        "AccessorialChargeMasterCode": StringAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "ShippingCarrierServiceId": UUIDAttribute, //
-        "OrderingCustomerAccountNumber": StringAttribute, //
-        "EffectiveStartDate": StringAttribute, //
-        "EffectiveEndDate": StringAttribute, //
-        "DeliveryTermsCode": StringAttribute, //
-        "IsFreightChargeIgnored": StringAttribute, //
-        "WarehouseId": UUIDAttribute, //
-        "OperationalSiteId": UUIDAttribute, //
-        "TransportationMethodId": UUIDAttribute, //
-        "FreightChargeType": StringAttribute, //
-        "InventoryChargeCode": StringAttribute, //
-        "TransportationModeCode": StringAttribute, //
-        "Relationship_AccessorialChargeMasterRelationshipId": UUIDAttribute, //
-        "Relationship_ShippingCarrierRelationshipId": UUIDAttribute, //
-        "Relationship_ShippingCarrierServiceRelationshipId": UUIDAttribute, //
-        "Relationship_OrderingCustomerRelationshipId": UUIDAttribute, //
-        "Relationship_DeliveryTermsRelationshipId": UUIDAttribute, //
-        "Relationship_WarehouseRelationshipId": UUIDAttribute, //
-        "Relationship_OperationalSiteRelationshipId": UUIDAttribute, //
-        "Relationship_TransportationMethodRelationshipId": UUIDAttribute, //
-        "Relationship_TransportationModeRelationshipId": UUIDAttribute, //
-        "Relationship_InventoryChargeRelationshipId": UUIDAttribute, //
-        "BackingTable_TMSMiscellaneousChargeRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "accessorialChargeMasterCode": StringAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "shippingCarrierServiceId": UUIDAttribute, //
+        "orderingCustomerAccountNumber": StringAttribute, //
+        "effectiveStartDate": StringAttribute, //
+        "effectiveEndDate": StringAttribute, //
+        "deliveryTermsCode": StringAttribute, //
+        "isFreightChargeIgnored": StringAttribute, //
+        "warehouseId": UUIDAttribute, //
+        "operationalSiteId": UUIDAttribute, //
+        "transportationMethodId": UUIDAttribute, //
+        "freightChargeType": StringAttribute, //
+        "inventoryChargeCode": StringAttribute, //
+        "transportationModeCode": StringAttribute, //
+        "relationship_AccessorialChargeMasterRelationshipId": UUIDAttribute, //
+        "relationship_ShippingCarrierRelationshipId": UUIDAttribute, //
+        "relationship_ShippingCarrierServiceRelationshipId": UUIDAttribute, //
+        "relationship_OrderingCustomerRelationshipId": UUIDAttribute, //
+        "relationship_DeliveryTermsRelationshipId": UUIDAttribute, //
+        "relationship_WarehouseRelationshipId": UUIDAttribute, //
+        "relationship_OperationalSiteRelationshipId": UUIDAttribute, //
+        "relationship_TransportationMethodRelationshipId": UUIDAttribute, //
+        "relationship_TransportationModeRelationshipId": UUIDAttribute, //
+        "relationship_InventoryChargeRelationshipId": UUIDAttribute, //
+        "backingTable_TMSMiscellaneousChargeRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_inventoryfreightcharges");
   }
 }
 mixin(EntityCalls!("TransportationInventoryFreightChargeEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationInventoryFreightChargeEntity);
   
-  auto entity = TransportationInventoryFreightChargeEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationInventoryFreightChargeEntity;
+    // TODO more tests
   }
 }

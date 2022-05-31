@@ -11,37 +11,31 @@ class DTransportationShippingCarrierNumberSequenceEntity : DOOPEntity {
 
     this
       .addValues([
-        "TransportationGenericEngineCheckDigitCode": StringAttribute, //
-        "EndingSequenceNumber": StringAttribute, //
-        "SequenceName": StringAttribute, //
-        "NextSequenceNumber": StringAttribute, //
-        "SequenceCode": StringAttribute, //
-        "SequenceType": StringAttribute, //
-        "SequenceSuffix": StringAttribute, //
-        "SequencePrefix": StringAttribute, //
-        "SequenceLength": StringAttribute, //
-        "BeginningSequenceNumber": StringAttribute, //
-        "SequenceThreshold": StringAttribute, //
-        "Relationship_TransportationGenericEngineRelationshipId": UUIDAttribute, //
-        "BackingTable_TMSNumberSequenceRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "transportationGenericEngineCheckDigitCode": StringAttribute, //
+        "endingSequenceNumber": StringAttribute, //
+        "sequenceName": StringAttribute, //
+        "nextSequenceNumber": StringAttribute, //
+        "sequenceCode": StringAttribute, //
+        "sequenceType": StringAttribute, //
+        "sequenceSuffix": StringAttribute, //
+        "sequencePrefix": StringAttribute, //
+        "sequenceLength": StringAttribute, //
+        "beginningSequenceNumber": StringAttribute, //
+        "sequenceThreshold": StringAttribute, //
+        "relationship_TransportationGenericEngineRelationshipId": UUIDAttribute, //
+        "backingTable_TMSNumberSequenceRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_shippingcarriers");
   }
 }
 mixin(EntityCalls!("TransportationShippingCarrierNumberSequenceEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierNumberSequenceEntity);
   
-  auto entity = TransportationShippingCarrierNumberSequenceEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationShippingCarrierNumberSequenceEntity;
+    // TODO more tests
   }
 }

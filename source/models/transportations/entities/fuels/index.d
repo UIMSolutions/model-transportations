@@ -11,19 +11,19 @@ class DTransportationFuelIndexEntity : DOOPEntity {
 
     this
       .addValues([
-        "EffectiveDateTime": StringAttribute, //
-        "FuelIndexRegionId": UUIDAttribute, //
-        "GallonPrice": StringAttribute, //
-        "Relationship_FuelIndexRegionRelationshipId": UUIDAttribute, //
-        "BackingTable_TMSFuelIndexRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "effectiveDateTime": StringAttribute, //
+        "fuelIndexRegionId": UUIDAttribute, //
+        "gallonPrice": StringAttribute, //
+        "relationship_FuelIndexRegionRelationshipId": UUIDAttribute, //
+        "backingTable_TMSFuelIndexRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_fuelindexes");
   }
 }
 mixin(EntityCalls!("TransportationFuelIndexEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFuelIndexEntity);
   

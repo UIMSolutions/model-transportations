@@ -11,31 +11,25 @@ class DTransportationRoutePlanHubConfigurationEntity : DOOPEntity {
 
     this
       .addValues([
-        "TransportationHubId": UUIDAttribute, //
-        "InvoiceAccountType": StringAttribute, //
-        "PayingPartyRole": StringAttribute, //
-        "TransportationRoutePlanId": UUIDAttribute, //
-        "OrderVendorAccountNumber": StringAttribute, //
-        "InvoiceVendorAccountNumber": StringAttribute, //
-        "BackingTable_TMSRouteHubConfigRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "transportationHubId": UUIDAttribute, //
+        "invoiceAccountType": StringAttribute, //
+        "payingPartyRole": StringAttribute, //
+        "transportationRoutePlanId": UUIDAttribute, //
+        "orderVendorAccountNumber": StringAttribute, //
+        "invoiceVendorAccountNumber": StringAttribute, //
+        "backingTable_TMSRouteHubConfigRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_routeplanhubconfigurations");
   }
 }
 mixin(EntityCalls!("TransportationRoutePlanHubConfigurationEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationRoutePlanHubConfigurationEntity);
   
-  auto entity = TransportationRoutePlanHubConfigurationEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationRoutePlanHubConfigurationEntity;
+    // TODO more tests
   }
 }

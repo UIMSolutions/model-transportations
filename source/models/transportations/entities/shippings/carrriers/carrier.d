@@ -11,38 +11,32 @@ class DTransportationShippingCarrierEntity : DOOPEntity {
 
     this
       .addValues([
-        "IsBroker": StringAttribute, //
-        "IsShippingCarrierActive": StringAttribute, //
-        "IsShippingCarrierRatingActive": StringAttribute, //
-        "ProNumberSequenceId": UUIDAttribute, //
-        "CarrierId": UUIDAttribute, //
-        "CarrierName": StringAttribute, //
-        "StandardCarrierAlphaCode": StringAttribute, //
-        "ShippingCarrierTrackingURL": StringAttribute, //
-        "ShippingCarrierWebsiteURL": StringAttribute, //
-        "TransportationModeId": UUIDAttribute, //
-        "TransportationTenderType": StringAttribute, //
-        "ShippingCarrierVendorAccountNumber": StringAttribute, //
-        "AverageContainerWeight": StringAttribute, //
-        "BackingTable_TMSCarrierRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "isBroker": StringAttribute, //
+        "isShippingCarrierActive": StringAttribute, //
+        "isShippingCarrierRatingActive": StringAttribute, //
+        "proNumberSequenceId": UUIDAttribute, //
+        "carrierId": UUIDAttribute, //
+        "carrierName": StringAttribute, //
+        "standardCarrierAlphaCode": StringAttribute, //
+        "shippingCarrierTrackingURL": StringAttribute, //
+        "shippingCarrierWebsiteURL": StringAttribute, //
+        "transportationModeId": UUIDAttribute, //
+        "transportationTenderType": StringAttribute, //
+        "shippingCarrierVendorAccountNumber": StringAttribute, //
+        "averageContainerWeight": StringAttribute, //
+        "backingTable_TMSCarrierRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_shippingcarriers");
   }
 }
 mixin(EntityCalls!("TransportationShippingCarrierEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierEntity);
   
-  auto entity = TransportationShippingCarrierEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationShippingCarrierEntity;
+    // TODO more tests
   }
 }

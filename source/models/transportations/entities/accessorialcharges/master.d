@@ -11,28 +11,22 @@ class DTransportationAccessorialChargeMasterEntity : DOOPEntity {
 
     this
       .addValues([
-        "MasterCode": StringAttribute, //
-        "ChargeMasterType": StringAttribute, //
-        "MasterDescription": StringAttribute, //
-        "BackingTable_TMSAccessorialMasterRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "masterCode": StringAttribute, //
+        "chargeMasterType": StringAttribute, //
+        "masterDescription": StringAttribute, //
+        "backingTable_TMSAccessorialMasterRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_accessorialchargemasters");
   }
 }
 mixin(EntityCalls!("TMSAccessorialChargeMasterEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSAccessorialChargeMasterEntity);
   
-  auto entity = TMSAccessorialChargeMasterEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSAccessorialChargeMasterEntity;
+    // TODO more tests    
   }
 }

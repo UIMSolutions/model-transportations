@@ -11,33 +11,27 @@ class DTransportationFreightReconciliationReasonCodeEntity : DOOPEntity {
 
     this
       .addValues([
-        "ReasonDescription": StringAttribute, // 
-        "ReasonCode": StringAttribute, // 
-        "CreditMainAccountId": UUIDAttribute, // 
-        "DebitLedgerAccount": StringAttribute, // 
-        "IsChargeDebitLedgerAccountOveridden": StringAttribute, // 
-        "IsVendorPayingFreight": StringAttribute, // 
-        "DebitLedgerAccountDisplayValue": StringAttribute, // 
-        "Relationship_OffAcctLedgerDimensionCombinationRelationshipId": UUIDAttribute, // 
-        "BackingTable_TMSFreightMatchReasonRelationshipId": UUIDAttribute, // 
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
+        "reasonDescription": StringAttribute, // 
+        "reasonCode": StringAttribute, // 
+        "creditMainAccountId": UUIDAttribute, // 
+        "debitLedgerAccount": StringAttribute, // 
+        "isChargeDebitLedgerAccountOveridden": StringAttribute, // 
+        "isVendorPayingFreight": StringAttribute, // 
+        "debitLedgerAccountDisplayValue": StringAttribute, // 
+        "relationship_OffAcctLedgerDimensionCombinationRelationshipId": UUIDAttribute, // 
+        "backingTable_TMSFreightMatchReasonRelationshipId": UUIDAttribute, // 
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("transportation_freightreconciliationreasoncodes");
   }
 }
 mixin(EntityCalls!("TransportationFreightReconciliationReasonCodeEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFreightReconciliationReasonCodeEntity);
   
-  auto entity = TMSFreightReconciliationReasonCodeEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSFreightReconciliationReasonCodeEntity;
+    // TODO more tests
   }
 }

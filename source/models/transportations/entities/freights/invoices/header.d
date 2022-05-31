@@ -11,70 +11,64 @@ class DTransportationFreightInvoiceHeaderEntity : DOOPEntity {
 
     this
       .addValues([
-        "ShippingCarrierVendorAccountNumber": StringAttribute, 
-        "DestinationCountryRegionId": UUIDAttribute, 
-        "IsInvoiceAutomaticallyMatched": StringAttribute, 
-        "DefaultBillOfLadingId": UUIDAttribute, 
-        "DefaultBookingNumber": StringAttribute, 
-        "DefaultShippingCarrierId": UUIDAttribute, 
-        "DefaultShippingCarrierServiceId": UUIDAttribute, 
-        "CashDiscountCode": StringAttribute, 
-        "DefaultCosigneeName": StringAttribute, 
-        "DestinationCountryRegionISOCode": StringAttribute, 
-        "CurrencyCode": StringAttribute, 
-        "DefaultLastCycleCountingDateTime": StringAttribute, 
-        "CashDiscountAmount": StringAttribute, 
-        "TransportationDistance": StringAttribute, 
-        "TransportationDistanceUnitId": UUIDAttribute, 
-        "DocumentDate": StringAttribute, 
-        "DocumentNumber": StringAttribute, 
-        "DueDateTime": StringAttribute, 
-        "ExchangeRate": StringAttribute, 
-        "InternalInvoiceNumber": StringAttribute, 
-        "InvoiceAmount": StringAttribute, 
-        "InvoiceDate": StringAttribute, 
-        "ReferenceNumber": StringAttribute, 
-        "InvoiceStatus": StringAttribute, 
-        "LoadId": UUIDAttribute, 
-        "OriginalQuoteId": UUIDAttribute, 
-        "PayeeVendorAccountNumber": StringAttribute, 
-        "PaymentId": UUIDAttribute, 
-        "ProNumberCode": StringAttribute, 
-        "TotalFreightQuantity": StringAttribute, 
-        "DefaultRelatedAccountNumber": StringAttribute, 
-        "DefaultRelatedOrderNumber": StringAttribute, 
-        "TransportationRouteCode": StringAttribute, 
-        "SCACCode": StringAttribute, 
-        "DefaultShipmentId": UUIDAttribute, 
-        "DefaultFreightHeldUntilDateTime": StringAttribute, 
-        "DefaultTrailerNumber": StringAttribute, 
-        "InvoiceVendorAccountNumber": StringAttribute, 
-        "InvoiceNumber": StringAttribute, 
-        "PaymentTermsName": StringAttribute, 
-        "VendorReference": StringAttribute, 
-        "DefaultVesselName": StringAttribute, 
-        "DefaultVoyageNumber": StringAttribute, 
-        "TotalFreightWeight": StringAttribute, 
-        "FreightWeightUnitId": UUIDAttribute, 
-        "BackingTable_TMSInvoiceTableRelationshipId": UUIDAttribute, 
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, 
+        "shippingCarrierVendorAccountNumber": StringAttribute, 
+        "destinationCountryRegionId": UUIDAttribute, 
+        "isInvoiceAutomaticallyMatched": StringAttribute, 
+        "defaultBillOfLadingId": UUIDAttribute, 
+        "defaultBookingNumber": StringAttribute, 
+        "defaultShippingCarrierId": UUIDAttribute, 
+        "defaultShippingCarrierServiceId": UUIDAttribute, 
+        "cashDiscountCode": StringAttribute, 
+        "defaultCosigneeName": StringAttribute, 
+        "destinationCountryRegionISOCode": StringAttribute, 
+        "currencyCode": StringAttribute, 
+        "defaultLastCycleCountingDateTime": StringAttribute, 
+        "cashDiscountAmount": StringAttribute, 
+        "transportationDistance": StringAttribute, 
+        "transportationDistanceUnitId": UUIDAttribute, 
+        "documentDate": StringAttribute, 
+        "documentNumber": StringAttribute, 
+        "dueDateTime": StringAttribute, 
+        "exchangeRate": StringAttribute, 
+        "internalInvoiceNumber": StringAttribute, 
+        "invoiceAmount": StringAttribute, 
+        "invoiceDate": StringAttribute, 
+        "referenceNumber": StringAttribute, 
+        "invoiceStatus": StringAttribute, 
+        "loadId": UUIDAttribute, 
+        "originalQuoteId": UUIDAttribute, 
+        "payeeVendorAccountNumber": StringAttribute, 
+        "paymentId": UUIDAttribute, 
+        "proNumberCode": StringAttribute, 
+        "totalFreightQuantity": StringAttribute, 
+        "defaultRelatedAccountNumber": StringAttribute, 
+        "defaultRelatedOrderNumber": StringAttribute, 
+        "transportationRouteCode": StringAttribute, 
+        "scacCode": StringAttribute, 
+        "defaultShipmentId": UUIDAttribute, 
+        "defaultFreightHeldUntilDateTime": StringAttribute, 
+        "defaultTrailerNumber": StringAttribute, 
+        "invoiceVendorAccountNumber": StringAttribute, 
+        "invoiceNumber": StringAttribute, 
+        "paymentTermsName": StringAttribute, 
+        "vendorReference": StringAttribute, 
+        "defaultVesselName": StringAttribute, 
+        "defaultVoyageNumber": StringAttribute, 
+        "totalFreightWeight": StringAttribute, 
+        "freightWeightUnitId": UUIDAttribute, 
+        "backingTable_TMSInvoiceTableRelationshipId": UUIDAttribute, 
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, 
       ])
       .registerPath("transportation_freightinvoiceheaders");
   }
 }
 mixin(EntityCalls!("TransportationFreightInvoiceHeaderEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFreightInvoiceHeaderEntity);
   
-  auto entity = TMSFreightInvoiceHeaderEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSFreightInvoiceHeaderEntity;
+    // TODO more tests
   }
 }

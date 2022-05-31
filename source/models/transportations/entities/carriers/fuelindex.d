@@ -11,27 +11,21 @@ class DTransportationCarrierFuelIndexEntity : DOOPEntity {
 
     this
       .addValues([
-        "IndexCode": StringAttribute, //
-        "IndexDescription": StringAttribute, //
-        "BackingTable_TMSCarrierFuelIndexTableRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "indexCode": StringAttribute, //
+        "indexDescription": StringAttribute, //
+        "backingTable_TMSCarrierFuelIndexTableRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_carrierfuelindexes");
   }
 }
 mixin(EntityCalls!("TransportationCarrierFuelIndexEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSCarrierFuelIndexEntity);
   
-  auto entity = TMSCarrierFuelIndexEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSCarrierFuelIndexEntity;
+    // TODO more tests
   }
 }

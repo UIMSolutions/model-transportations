@@ -11,32 +11,26 @@ class DTransportationCarrierFuelIndexLineEntity : DOOPEntity {
 
     this
       .addValues([
-        "CarrierFuelIndexCode": StringAttribute, //
-        "EffectiveDateTime": StringAttribute, //
-        "FromGallonPrice": StringAttribute, //
-        "ToGallonPrice": StringAttribute, //
-        "PriceCurrencyCode": StringAttribute, //
-        "AccessorialUnitPercentage": StringAttribute, //
-        "FreightSurchargeFlatRate": StringAttribute, //
-        "BackingTable_TMSCarrierFuelIndexLineRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "carrierFuelIndexCode": StringAttribute, //
+        "effectiveDateTime": StringAttribute, //
+        "fromGallonPrice": StringAttribute, //
+        "toGallonPrice": StringAttribute, //
+        "priceCurrencyCode": StringAttribute, //
+        "accessorialUnitPercentage": StringAttribute, //
+        "freightSurchargeFlatRate": StringAttribute, //
+        "backingTable_TMSCarrierFuelIndexLineRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("transportation_carrierfuelindexes");
+      .registerPath("transportation_carrierfuelindexlines");
   }
 }
 mixin(EntityCalls!("TransportationCarrierFuelIndexLineEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSAccessorialChargeMasterEntity);
   
-  auto entity = TMSAccessorialChargeMasterEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSAccessorialChargeMasterEntity;
+    // TODO more tests
   }
 }

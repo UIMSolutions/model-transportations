@@ -11,17 +11,17 @@ class DTransportationFuelIndexRegionEntity : DOOPEntity {
 
     this
       .addValues([
-        "RegionId": UUIDAttribute, //
-        "RegionName": StringAttribute, //
-        "BackingTable_TMSFuelIndexRegionRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "regionId": UUIDAttribute, //
+        "regionName": StringAttribute, //
+        "backingTable_TMSFuelIndexRegionRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_fuelindexregions");
   }
 }
 mixin(EntityCalls!("TransportationFuelIndexRegionEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFuelIndexRegionEntity);
   

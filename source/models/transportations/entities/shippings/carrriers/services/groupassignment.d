@@ -11,28 +11,22 @@ class DTransportationShippingCarrierServiceGroupAssignmentEntity : DOOPEntity {
 
     this
       .addValues([
-        "ShippingCarrierServiceGroupId": UUIDAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "ShippingCarrierServiceId": UUIDAttribute, //
-        "BackingTable_TMSCarrierGroupXRefRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "shippingCarrierServiceGroupId": UUIDAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "shippingCarrierServiceId": UUIDAttribute, //
+        "backingTable_TMSCarrierGroupXRefRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("transportation_shippingcarrierservicegroupassignments");
+      .registerPath("transportation_shippingcarrier.servicegroupassignments");
   }
 }
 mixin(EntityCalls!("TransportationShippingCarrierServiceGroupAssignmentEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierServiceGroupAssignmentEntity);
   
-  auto entity = TransportationShippingCarrierServiceGroupAssignmentEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationShippingCarrierServiceGroupAssignmentEntity;
+    // TODO more tests
   }
 }

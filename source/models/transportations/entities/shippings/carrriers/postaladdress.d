@@ -11,51 +11,45 @@ class DTransportationShippingCarrierPostalAddressEntity : DOOPEntity {
 
     this
       .addValues([
-        "ShippingCarrierId": UUIDAttribute, //
-        "IsPrimaryAddress": StringAttribute, //
-        "AddressLocationId": UUIDAttribute, //
-        "AddressDescription": StringAttribute, //
-        "AddressBuildingCompliment": StringAttribute, //
-        "AddressCity": StringAttribute, //
-        "AddressCountryRegionId": UUIDAttribute, //
-        "AddressCountryRegionISOCode": StringAttribute, //
-        "AddressCityInKana": StringAttribute, //
-        "AddressCountyId": UUIDAttribute, //
-        "AddressDistrictName": StringAttribute, //
-        "AddressLatitude": StringAttribute, //
-        "AddressLongitude": StringAttribute, //
-        "AddressPostBox": StringAttribute, //
-        "AddressStateId": UUIDAttribute, //
-        "AddressStreet": StringAttribute, //
-        "AddressStreetNumber": StringAttribute, //
-        "AddressStreetInKana": StringAttribute, //
-        "AddressTimezone": StringAttribute, //
-        "AddressValidFrom": StringAttribute, //
-        "AddressValidTo": StringAttribute, //
-        "AddressZipCode": StringAttribute, //
-        "AddressLocationRoles": StringAttribute, //
-        "FormattedAddress": StringAttribute, //
-        "ShippingCarrierLegalEntityId": UUIDAttribute, //
-        "Location": StringAttribute, //
-        "BackingTable_TMSCarrierLogisticsLocationRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "isPrimaryAddress": StringAttribute, //
+        "addressLocationId": UUIDAttribute, //
+        "addressDescription": StringAttribute, //
+        "addressBuildingCompliment": StringAttribute, //
+        "addressCity": StringAttribute, //
+        "addressCountryRegionId": UUIDAttribute, //
+        "addressCountryRegionISOCode": StringAttribute, //
+        "addressCityInKana": StringAttribute, //
+        "addressCountyId": UUIDAttribute, //
+        "addressDistrictName": StringAttribute, //
+        "addressLatitude": StringAttribute, //
+        "addressLongitude": StringAttribute, //
+        "addressPostBox": StringAttribute, //
+        "addressStateId": UUIDAttribute, //
+        "addressStreet": StringAttribute, //
+        "addressStreetNumber": StringAttribute, //
+        "addressStreetInKana": StringAttribute, //
+        "addressTimezone": StringAttribute, //
+        "addressValidFrom": StringAttribute, //
+        "addressValidTo": StringAttribute, //
+        "addressZipCode": StringAttribute, //
+        "addressLocationRoles": StringAttribute, //
+        "formattedAddress": StringAttribute, //
+        "shippingCarrierLegalEntityId": UUIDAttribute, //
+        "location": StringAttribute, //
+        "backingTable_TMSCarrierLogisticsLocationRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("transportation_shippingcarriers");
+      .registerPath("transportation_shippingcarriers.postaladdresses");
   }
 }
 mixin(EntityCalls!("TransportationShippingCarrierPostalAddressEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierPostalAddressEntity);
   
-  auto entity = TransportationShippingCarrierPostalAddressEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationShippingCarrierPostalAddressEntity;
+    // TODO more tests
   }
 }

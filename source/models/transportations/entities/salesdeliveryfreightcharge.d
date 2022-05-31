@@ -11,50 +11,44 @@ class DTransportationSalesDeliveryFreightChargeEntity : DOOPEntity {
 
     this
       .addValues([
-        "AccessorialChargeMasterCode": StringAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "ShippingCarrierServiceId": UUIDAttribute, //
-        "OrderingCustomerAccountNumber": StringAttribute, //
-        "EffectiveStartDate": StringAttribute, //
-        "EffectiveEndDate": StringAttribute, //
-        "DeliveryTermsCode": StringAttribute, //
-        "IsFreightChargeIgnored": StringAttribute, //
-        "WarehouseId": UUIDAttribute, //
-        "OperationalSiteId": UUIDAttribute, //
-        "TransportationMethodId": UUIDAttribute, //
-        "FreightChargeType": StringAttribute, //
-        "SalesDeliveryChargeCode": StringAttribute, //
-        "TransportationModeCode": StringAttribute, //
-        "FreightChargeCategoryType": StringAttribute, //
-        "Relationship_AccessorialChargeMasterRelationshipId": UUIDAttribute, //
-        "Relationship_ShippingCarrierRelationshipId": UUIDAttribute, //
-        "Relationship_ShippingCarrierServiceRelationshipId": UUIDAttribute, //
-        "Relationship_OrderingCustomerRelationshipId": UUIDAttribute, //
-        "Relationship_DeliveryTermsRelationshipId": UUIDAttribute, //
-        "Relationship_WarehouseRelationshipId": UUIDAttribute, //
-        "Relationship_OperationalSiteRelationshipId": UUIDAttribute, //
-        "Relationship_TransportationMethodRelationshipId": UUIDAttribute, //
-        "Relationship_TransportationModeRelationshipId": UUIDAttribute, //
-        "Relationship_SalesDeliveryChargeRelationshipId": UUIDAttribute, //
+        "accessorialChargeMasterCode": StringAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "shippingCarrierServiceId": UUIDAttribute, //
+        "orderingCustomerAccountNumber": StringAttribute, //
+        "effectiveStartDate": StringAttribute, //
+        "effectiveEndDate": StringAttribute, //
+        "deliveryTermsCode": StringAttribute, //
+        "isFreightChargeIgnored": StringAttribute, //
+        "warehouseId": UUIDAttribute, //
+        "operationalSiteId": UUIDAttribute, //
+        "transportationMethodId": UUIDAttribute, //
+        "freightChargeType": StringAttribute, //
+        "salesDeliveryChargeCode": StringAttribute, //
+        "transportationModeCode": StringAttribute, //
+        "freightChargeCategoryType": StringAttribute, //
+        "relationship_AccessorialChargeMasterRelationshipId": UUIDAttribute, //
+        "relationship_ShippingCarrierRelationshipId": UUIDAttribute, //
+        "relationship_ShippingCarrierServiceRelationshipId": UUIDAttribute, //
+        "relationship_OrderingCustomerRelationshipId": UUIDAttribute, //
+        "relationship_DeliveryTermsRelationshipId": UUIDAttribute, //
+        "relationship_WarehouseRelationshipId": UUIDAttribute, //
+        "relationship_OperationalSiteRelationshipId": UUIDAttribute, //
+        "relationship_TransportationMethodRelationshipId": UUIDAttribute, //
+        "relationship_TransportationModeRelationshipId": UUIDAttribute, //
+        "relationship_SalesDeliveryChargeRelationshipId": UUIDAttribute, //
         "BackingTable_TMSMiscellaneousChargeRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_salesdeliveryfreightcharges");
   }
 }
 mixin(EntityCalls!("TransportationSalesDeliveryFreightChargeEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationSalesDeliveryFreightChargeEntity);
   
-  auto entity = TransportationSalesDeliveryFreightChargeEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationSalesDeliveryFreightChargeEntity;
+    // TODO more tests
   }
 }

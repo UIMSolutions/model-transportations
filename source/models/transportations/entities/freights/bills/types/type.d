@@ -11,28 +11,22 @@ class DTransportationFreightBillTypeEntity : DOOPEntity {
 
     this
       .addValues([
-        "FreightEngineAssemblyName": StringAttribute, //
-        "FreightEngineClassName": StringAttribute, //
-        "TypeId": UUIDAttribute, //
-        "BackingTable_TMSFreightBillTypeRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "freightEngineAssemblyName": StringAttribute, //
+        "freightEngineClassName": StringAttribute, //
+        "typeId": UUIDAttribute, //
+        "backingTable_TMSFreightBillTypeRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_freightbilltypes");
   }
 }
 mixin(EntityCalls!("TransportationFreightBillTypeEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFreightBillTypeEntity);
   
-  auto entity = TMSFreightBillTypeEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSFreightBillTypeEntity;
+    // TODO more tests
   }
 }

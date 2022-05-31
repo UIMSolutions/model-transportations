@@ -11,36 +11,30 @@ class DTransportationShippingCarrierRatingProfileEntity : DOOPEntity {
 
     this
       .addValues([
-        "EffectiveEndDateTime": StringAttribute, //
-        "EffectiveStartDateTime": StringAttribute, //
-        "FreightRateEngineId": UUIDAttribute, //
-        "FreightRateMasterId": UUIDAttribute, //
-        "OriginDestinationSiteId": UUIDAttribute, //
-        "OriginDestinationWarehouseId": UUIDAttribute, //
-        "CarrierFuelIndexCode": StringAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "ProfileId": UUIDAttribute, //
-        "ProfileName": StringAttribute, //
-        "TransportationTransitTimeEngineId": UUIDAttribute, //
-        "BackingTable_TMSRatingProfileRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "effectiveEndDateTime": StringAttribute, //
+        "effectiveStartDateTime": StringAttribute, //
+        "freightRateEngineId": UUIDAttribute, //
+        "freightRateMasterId": UUIDAttribute, //
+        "originDestinationSiteId": UUIDAttribute, //
+        "originDestinationWarehouseId": UUIDAttribute, //
+        "carrierFuelIndexCode": StringAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "profileId": UUIDAttribute, //
+        "profileName": StringAttribute, //
+        "transportationTransitTimeEngineId": UUIDAttribute, //
+        "backingTable_TMSRatingProfileRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("transportation_shippingcarrierratingprofiles");
+      .registerPath("transportation_shippingcarrier.ratingprofiles");
   }
 }
 mixin(EntityCalls!("TransportationShippingCarrierRatingProfileEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierRatingProfileEntity);
   
-  auto entity = TransportationShippingCarrierRatingProfileEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationShippingCarrierRatingProfileEntity;
+    // TODO more tests
   }
 }

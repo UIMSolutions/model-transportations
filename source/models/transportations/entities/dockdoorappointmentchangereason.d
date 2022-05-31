@@ -11,27 +11,21 @@ class DTransportationDockDoorAppointmentChangeReasonEntity : DOOPEntity {
 
     this
       .addValues([
-        "ReasonCode": StringAttribute, //
-        "ReasonDescription": StringAttribute, //
-        "BackingTable_TMSChangeReasonRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "reasonCode": StringAttribute, //
+        "reasonDescription": StringAttribute, //
+        "backingTable_TMSChangeReasonRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_dockdoorappointmentchangereasons");
   }
 }
 mixin(EntityCalls!("TransportationDockDoorAppointmentChangeReasonEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationDockDoorAppointmentChangeReasonEntity);
   
-  auto entity = TransportationDockDoorAppointmentChangeReasonEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    uto entity = TransportationDockDoorAppointmentChangeReasonEntity;
+    // TODO more tests
   }
 }

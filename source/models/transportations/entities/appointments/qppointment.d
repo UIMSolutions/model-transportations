@@ -11,49 +11,43 @@ class DTransportationAppointmentEntity : DOOPEntity {
 
     this
       .addValues([
-        "AppointmentSiteId": StringAttribute, //
-        "AppointmentWarehouseId": StringAttribute, //
-        "AppointmentWarehouseLocationId": StringAttribute, //
-        "AppointmentId": StringAttribute, //
-        "AppointmentName": StringAttribute, //
-        "AppointmentNote": StringAttribute, //
-        "AppointmentStatus": StringAttribute, //
-        "CustomerAccountNumber": StringAttribute, //
-        "IsCustomerPickupAllowed": StringAttribute, //
-        "LoadId": StringAttribute, //
-        "PlannedEndDateTime": StringAttribute, //
-        "PlannedStartDateTime": StringAttribute, //
-        "ProductMovementDirectionRule": StringAttribute, //
-        "PurchaseOrderNumber": StringAttribute, //
-        "SalesOrderNumber": StringAttribute, //
-        "ShippingCarrierVendorAccountNumber": StringAttribute, //
-        "TractorNumber": StringAttribute, //
-        "TrailerNumber": StringAttribute, //
-        "TransportationAppointmentRuleId": StringAttribute, //
-        "TransportationBrokerId": StringAttribute, //
-        "TransportationCarrierId": StringAttribute, //
-        "VendorAccountNumber": StringAttribute, //
-        "Relationship_CustomerRelationshipId": StringAttribute, //
-        "Relationship_VendorRelationshipId": StringAttribute, //
-        "BackingTable_TMSAppointmentRelationshipId": StringAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //	
+        "appointmentSiteId": StringAttribute, //
+        "appointmentWarehouseId": StringAttribute, //
+        "appointmentWarehouseLocationId": StringAttribute, //
+        "appointmentId": StringAttribute, //
+        "appointmentName": StringAttribute, //
+        "appointmentNote": StringAttribute, //
+        "appointmentStatus": StringAttribute, //
+        "customerAccountNumber": StringAttribute, //
+        "isCustomerPickupAllowed": StringAttribute, //
+        "loadId": StringAttribute, //
+        "plannedEndDateTime": StringAttribute, //
+        "plannedStartDateTime": StringAttribute, //
+        "productMovementDirectionRule": StringAttribute, //
+        "purchaseOrderNumber": StringAttribute, //
+        "salesOrderNumber": StringAttribute, //
+        "shippingCarrierVendorAccountNumber": StringAttribute, //
+        "tractorNumber": StringAttribute, //
+        "trailerNumber": StringAttribute, //
+        "transportationAppointmentRuleId": StringAttribute, //
+        "transportationBrokerId": StringAttribute, //
+        "transportationCarrierId": StringAttribute, //
+        "vendorAccountNumber": StringAttribute, //
+        "relationship_CustomerRelationshipId": StringAttribute, //
+        "relationship_VendorRelationshipId": StringAttribute, //
+        "backingTable_TMSAppointmentRelationshipId": StringAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //	
      ])
       .registerPath("transportation_appointmentdriverlogs");
   }
 }
 mixin(EntityCalls!("transportation_appointmentchangereasoncodes"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSAccessorialChargeMasterEntity);
   
-  auto entity = TMSAccessorialChargeMasterEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSAccessorialChargeMasterEntity;
+    // TODO more tests
   }
 }

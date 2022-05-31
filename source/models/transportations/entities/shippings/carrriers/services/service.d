@@ -11,34 +11,28 @@ class DTransportationShippingCarrierServiceEntity : DOOPEntity {
 
     this
       .addValues([
-        "DeliveryModeCode": StringAttribute, //
-        "PhysicalLoadTemplateId": UUIDAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "ExternalShippingCarrierServiceId": UUIDAttribute, //
-        "ServiceId": UUIDAttribute, //
-        "ServiceName": StringAttribute, //
-        "TransportationBillingGroupId": UUIDAttribute, //
-        "TransportationMethodId": UUIDAttribute, //
-        "LoadVolumeFactor": StringAttribute, //
-        "BackingTable_TMSCarrierServiceRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "deliveryModeCode": StringAttribute, //
+        "physicalLoadTemplateId": UUIDAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "externalShippingCarrierServiceId": UUIDAttribute, //
+        "serviceId": UUIDAttribute, //
+        "serviceName": StringAttribute, //
+        "transportationBillingGroupId": UUIDAttribute, //
+        "transportationMethodId": UUIDAttribute, //
+        "loadVolumeFactor": StringAttribute, //
+        "backingTable_TMSCarrierServiceRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_shippingcarrierservices");
   }
 }
 mixin(EntityCalls!("TransportationShippingCarrierServiceEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierServiceEntity);
   
-  auto entity = TransportationShippingCarrierServiceEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationShippingCarrierServiceEntity;
+    // TODO more tests    
   }
 }

@@ -11,39 +11,33 @@ class DTransportationFreightBillMatchingAuditToleranceLevelEntity : DOOPEntity {
 
     this
       .addValues([
-        "UnderpaymentFreightBillReconcilliationReasonCode": StringAttribute, // 
-        "ToleranceLevelId": UUIDAttribute, // 
-        "MaximumAuditToleranceUnitType": StringAttribute, // 
-        "MinimumAuditToleranceUnitType": StringAttribute, // 
-        "ShippingCarrierId": UUIDAttribute, // 
-        "FreightBillTypeId": UUIDAttribute, // 
-        "WarehouseId": UUIDAttribute, // 
-        "OperationalSiteId": UUIDAttribute, // 
-        "OverpaymentFreightBillReconcilliationReasonCode": StringAttribute, // 
-        "ToleranceSequenceNumber": StringAttribute, // 
-        "MinimumAuditToleranceAmount": StringAttribute, // 
-        "MinimumAuditTolerancePercentage": StringAttribute, // 
-        "MaximumAuditToleranceAmount": StringAttribute, // 
-        "MaximumAuditTolerancePercentage": StringAttribute, // 
-        "BackingTable_TMSAuditMasterRelationshipId": UUIDAttribute, // 
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
+        "underpaymentFreightBillReconcilliationReasonCode": StringAttribute, // 
+        "toleranceLevelId": UUIDAttribute, // 
+        "maximumAuditToleranceUnitType": StringAttribute, // 
+        "minimumAuditToleranceUnitType": StringAttribute, // 
+        "shippingCarrierId": UUIDAttribute, // 
+        "freightBillTypeId": UUIDAttribute, // 
+        "warehouseId": UUIDAttribute, // 
+        "operationalSiteId": UUIDAttribute, // 
+        "overpaymentFreightBillReconcilliationReasonCode": StringAttribute, // 
+        "toleranceSequenceNumber": StringAttribute, // 
+        "minimumAuditToleranceAmount": StringAttribute, // 
+        "minimumAuditTolerancePercentage": StringAttribute, // 
+        "maximumAuditToleranceAmount": StringAttribute, // 
+        "maximumAuditTolerancePercentage": StringAttribute, // 
+        "backingTable_TMSAuditMasterRelationshipId": UUIDAttribute, // 
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("transportation_freightbillmatchingaudittolerancelevels");
   }
 }
 mixin(EntityCalls!("TransportationFreightBillMatchingAuditToleranceLevelEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFreightBillMatchingAuditToleranceLevelEntity);
   
-  auto entity = TMSFreightBillMatchingAuditToleranceLevelEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSFreightBillMatchingAuditToleranceLevelEntity;
+    // TODO more tests
   }
 }

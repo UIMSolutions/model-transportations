@@ -25,17 +25,11 @@ class DTransportationShippingCarrierCustomerAccountCriterionEntity : DOOPEntity 
 }
 mixin(EntityCalls!("TransportationShippingCarrierCustomerAccountCriterionEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierCustomerAccountCriterionEntity);
   
-  auto entity = TransportationShippingCarrierCustomerAccountCriterionEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationShippingCarrierCustomerAccountCriterionEntity;
+    // TODO more tests
   }
 }

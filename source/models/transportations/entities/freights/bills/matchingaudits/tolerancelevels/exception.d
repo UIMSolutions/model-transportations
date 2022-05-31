@@ -11,35 +11,29 @@ class DTransportationFreightBillMatchingAuditToleranceLevelExceptionEntity : DOO
 
     this
       .addValues([
-        "FreightBillMatchingAuditToleranceLevelId": UUIDAttribute, //
-        "MaximumAuditToleranceUnitType": StringAttribute, //
-        "MinimumAuditToleranceUnitType": StringAttribute, //
-        "TransportationBillingGroupId": UUIDAttribute, //
-        "ShippingCarrierAccessorialChargeId": UUIDAttribute, //
-        "TransportationHubAccessorialChargeId": UUIDAttribute, //
-        "MaximumAuditToleranceAmount": StringAttribute, //
-        "MaximumAuditTolerancePercentage": StringAttribute, //
-        "MinimumAuditToleranceAmount": StringAttribute, //
-        "MinimumAuditTolerancePercentage": StringAttribute, //
-        "BackingTable_TMSAuditExceptionRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "freightBillMatchingAuditToleranceLevelId": UUIDAttribute, //
+        "maximumAuditToleranceUnitType": StringAttribute, //
+        "minimumAuditToleranceUnitType": StringAttribute, //
+        "transportationBillingGroupId": UUIDAttribute, //
+        "shippingCarrierAccessorialChargeId": UUIDAttribute, //
+        "transportationHubAccessorialChargeId": UUIDAttribute, //
+        "maximumAuditToleranceAmount": StringAttribute, //
+        "maximumAuditTolerancePercentage": StringAttribute, //
+        "minimumAuditToleranceAmount": StringAttribute, //
+        "minimumAuditTolerancePercentage": StringAttribute, //
+        "backingTable_TMSAuditExceptionRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_freightbillmatchingaudittolerancelevelexceptions");
   }
 }
 mixin(EntityCalls!("TransportationFreightBillMatchingAuditToleranceLevelExceptionEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFreightBillMatchingAuditToleranceLevelExceptionEntity);
   
-  auto entity = TMSFreightBillMatchingAuditToleranceLevelExceptionEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSFreightBillMatchingAuditToleranceLevelExceptionEntity;
+    // TODO more tests
   }
 }

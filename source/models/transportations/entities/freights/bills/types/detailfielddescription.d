@@ -11,30 +11,24 @@ class DTransportationFreightBillTypeDetailEntity : DOOPEntity {
 
     this
       .addValues([
-        "FreightBillDetailFieldDescription": StringAttribute, //
-        "FreightBillTypeId": UUIDAttribute, //
-        "FreightBillLineFieldName": StringAttribute, //
-        "IsMatchingRequired": StringAttribute, //
-        "FieldSequenceNumber": StringAttribute, //
-        "BackingTable_TMSFreightBillTypeDetailRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "freightBillDetailFieldDescription": StringAttribute, //
+        "freightBillTypeId": UUIDAttribute, //
+        "freightBillLineFieldName": StringAttribute, //
+        "isMatchingRequired": StringAttribute, //
+        "fieldSequenceNumber": StringAttribute, //
+        "backingTable_TMSFreightBillTypeDetailRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_freightbilltypedetails");
   }
 }
 mixin(EntityCalls!("TransportationFreightBillTypeDetailEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFreightBillTypeDetailEntity);
   
-  auto entity = TMSFreightBillTypeDetailEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSFreightBillTypeDetailEntity;
+    // TODO more tests
   }
 }

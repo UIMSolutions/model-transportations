@@ -11,27 +11,21 @@ class DTransportationShippingCarrierServiceGroupEntity : DOOPEntity {
 
     this
       .addValues([
-        "GroupId": UUIDAttribute, //
-        "GroupName": StringAttribute, //
-        "BackingTable_TMSCarrierGroupRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "groupId": UUIDAttribute, //
+        "groupName": StringAttribute, //
+        "backingTable_TMSCarrierGroupRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_shippingcarrierservicegroups");
   }
 }
 mixin(EntityCalls!("TransportationShippingCarrierServiceGroupEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierServiceGroupEntity);
   
   auto entity = TransportationShippingCarrierServiceGroupEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+  // TODO more tests
   }
 }

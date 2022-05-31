@@ -11,125 +11,119 @@ class DTransportationFreightBillDetailEntity : DOOPEntity {
 
     this
       .addValues([
-        "AccessorialChargeMasterCode": StringAttribute, //
-        "BillOfLadingId": UUIDAttribute, //
-        "CurrencyCode": StringAttribute, //
-        "FreightBillId": UUIDAttribute, //
-        "FreightBillDetailEntryNumber": StringAttribute, //
-        "FreightBillTypeId": UUIDAttribute, //
-        "FreightBillOrderAmount": StringAttribute, //
-        "FreightBillOrderQuantity": StringAttribute, //
-        "HoldingFreightEndDatetime": StringAttribute, //
-        "InvoiceLineType": StringAttribute, //
-        "InvoiceVendorAccountNumber": StringAttribute, //
-        "LastCycleCountDateTime": StringAttribute, //
-        "LoadId": UUIDAttribute, //
-        "PhysicalWeight": StringAttribute, //
-        "ProductMovementDirectionRule": StringAttribute, //
-        "ProNumberCode": StringAttribute, //
-        "RateNotes": StringAttribute, //
-        "RateUnit": StringAttribute, //
-        "RateUnitMethod": StringAttribute, //
-        "ReconciliationStatus": StringAttribute, //
-        "SequenceNumber": StringAttribute, //
-        "ShipmentId": UUIDAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "ShippingCarrierServiceId": UUIDAttribute, //
-        "ShippingCarrierVendorAccountNumber": StringAttribute, //
-        "StandardTransportationCommodityCode": StringAttribute, //
-        "TotalRate": StringAttribute, //
-        "TractorNumber": StringAttribute, //
-        "TrailerNumber": StringAttribute, //
-        "TransportationBillingGroupId": UUIDAttribute, //
-        "TransportationBookingNumber": StringAttribute, //
-        "TransportationEquipmentCode": StringAttribute, //
-        "TransportationExternalCode": StringAttribute, //
-        "TransportationHubId": UUIDAttribute, //
-        "TransportationModeCode": StringAttribute, //
-        "TransportationRoutePlanId": UUIDAttribute, //
-        "VesselName": StringAttribute, //
-        "VoyageNum": StringAttribute, //
-        "DropOffPostalAddressRecId": UUIDAttribute, //
-        "DropOffAddressLocationId": UUIDAttribute, //
-        "FormattedDropOffAddress": StringAttribute, //
-        "DropOffAddressZipCode": StringAttribute, //
-        "DropOffAddressBuildingCompliment": StringAttribute, //
-        "DropOffAddressCity": StringAttribute, //
-        "DropOffAddressCityInKana": StringAttribute, //
-        "DropOffAddressCountryRegionId": UUIDAttribute, //
-        "DropOffAddressCountryRegionISOCode": StringAttribute, //
-        "DropOffAddressCountyId": UUIDAttribute, //
-        "DropOffAddressDescription": StringAttribute, //
-        "DropOffAddressDistrictName": StringAttribute, //
-        "DropOffAddressDunsNumber": StringAttribute, //
-        "DropOffAddressLatitude": StringAttribute, //
-        "IsDropOffAddressPrivate": StringAttribute, //
-        "DropOffAddressLongitude": StringAttribute, //
-        "DropOffAddressPostBox": StringAttribute, //
-        "DropOffAddressStateId": UUIDAttribute, //
-        "DropOffAddressStreet": StringAttribute, //
-        "DropOffAddressStreetInKana": StringAttribute, //
-        "DropOffAddressStreetNumber": StringAttribute, //
-        "DropOffAddressValidFrom": StringAttribute, //
-        "DropOffAddressValidTo": StringAttribute, //
-        "DropOffAddressTimeZone": StringAttribute, //
-        "PickupPostalAddressRecId": UUIDAttribute, //
-        "PickupAddressLocationId": UUIDAttribute, //
-        "FormattedPickupAddress": StringAttribute, //
-        "PickupAddressZipCode": StringAttribute, //
-        "PickupAddressBuildingCompliment": StringAttribute, //
-        "PickupAddressCity": StringAttribute, //
-        "PickupAddressCityInKana": StringAttribute, //
-        "PickupAddressCountryRegionId": UUIDAttribute, //
-        "PickupAddressCountryRegionISOCode": StringAttribute, //
-        "PickupAddressCountyId": UUIDAttribute, //
-        "PickupAddressDescription": StringAttribute, //
-        "PickupAddressDistrictName": StringAttribute, //
-        "PickupAddressDunsNumber": StringAttribute, //
-        "PickupAddressLatitude": StringAttribute, //
-        "IsPickupAddressPrivate": StringAttribute, //
-        "PickupAddressLongitude": StringAttribute, //
-        "PickupAddressPostBox": StringAttribute, //
-        "PickupAddressStateId": UUIDAttribute, //
-        "PickupAddressStreet": StringAttribute, //
-        "PickupAddressStreetInKana": StringAttribute, //
-        "PickupAddressStreetNumber": StringAttribute, //
-        "PickupAddressValidFrom": StringAttribute, //
-        "PickupAddressValidTo": StringAttribute, //
-        "PickupAddressTimeZone": StringAttribute, //
-        "LoadCustomerAccountNumber": StringAttribute, //
-        "LoadVendorAccountNumber": StringAttribute, //
-        "LoadSalesOrderNumber": StringAttribute, //
-        "LoadPurchaseOrderNumber": StringAttribute, //
-        "Relationship_ShippingCarrierVendorRelationshipId": UUIDAttribute, //
-        "Relationship_LoadCustomerRelationshipId": UUIDAttribute, //
-        "Relationship_LoadVendorRelationshipId": UUIDAttribute, //
-        "Relationship_AccessorialChargeMasterRelationshipId": UUIDAttribute, //
-        "Relationship_ShippingCarrierRelationshipId": UUIDAttribute, //
-        "Relationship_TransportationBillingGroupRelationshipId": UUIDAttribute, //
-        "Relationship_TransportationEquipmentRelationshipId": UUIDAttribute, //
-        "Relationship_TransportationHubRelationshipId": UUIDAttribute, //
-        "Relationship_TransportationModeRelationshipId": UUIDAttribute, //
-        "Relationship_FreightBillTypeRelationshipId": UUIDAttribute, //
-        "BackingTable_TMSFreightBillDetailRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "accessorialChargeMasterCode": StringAttribute, //
+        "billOfLadingId": UUIDAttribute, //
+        "currencyCode": StringAttribute, //
+        "freightBillId": UUIDAttribute, //
+        "freightBillDetailEntryNumber": StringAttribute, //
+        "freightBillTypeId": UUIDAttribute, //
+        "freightBillOrderAmount": StringAttribute, //
+        "freightBillOrderQuantity": StringAttribute, //
+        "holdingFreightEndDatetime": StringAttribute, //
+        "invoiceLineType": StringAttribute, //
+        "invoiceVendorAccountNumber": StringAttribute, //
+        "lastCycleCountDateTime": StringAttribute, //
+        "loadId": UUIDAttribute, //
+        "physicalWeight": StringAttribute, //
+        "productMovementDirectionRule": StringAttribute, //
+        "proNumberCode": StringAttribute, //
+        "rateNotes": StringAttribute, //
+        "rateUnit": StringAttribute, //
+        "rateUnitMethod": StringAttribute, //
+        "reconciliationStatus": StringAttribute, //
+        "sequenceNumber": StringAttribute, //
+        "shipmentId": UUIDAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "shippingCarrierServiceId": UUIDAttribute, //
+        "shippingCarrierVendorAccountNumber": StringAttribute, //
+        "standardTransportationCommodityCode": StringAttribute, //
+        "totalRate": StringAttribute, //
+        "tractorNumber": StringAttribute, //
+        "trailerNumber": StringAttribute, //
+        "transportationBillingGroupId": UUIDAttribute, //
+        "transportationBookingNumber": StringAttribute, //
+        "transportationEquipmentCode": StringAttribute, //
+        "transportationExternalCode": StringAttribute, //
+        "transportationHubId": UUIDAttribute, //
+        "transportationModeCode": StringAttribute, //
+        "transportationRoutePlanId": UUIDAttribute, //
+        "vesselName": StringAttribute, //
+        "voyageNum": StringAttribute, //
+        "dropOffPostalAddressRecId": UUIDAttribute, //
+        "dropOffAddressLocationId": UUIDAttribute, //
+        "formattedDropOffAddress": StringAttribute, //
+        "dropOffAddressZipCode": StringAttribute, //
+        "dropOffAddressBuildingCompliment": StringAttribute, //
+        "dropOffAddressCity": StringAttribute, //
+        "dropOffAddressCityInKana": StringAttribute, //
+        "dropOffAddressCountryRegionId": UUIDAttribute, //
+        "dropOffAddressCountryRegionISOCode": StringAttribute, //
+        "dropOffAddressCountyId": UUIDAttribute, //
+        "dropOffAddressDescription": StringAttribute, //
+        "dropOffAddressDistrictName": StringAttribute, //
+        "dropOffAddressDunsNumber": StringAttribute, //
+        "dropOffAddressLatitude": StringAttribute, //
+        "isDropOffAddressPrivate": StringAttribute, //
+        "dropOffAddressLongitude": StringAttribute, //
+        "dropOffAddressPostBox": StringAttribute, //
+        "dropOffAddressStateId": UUIDAttribute, //
+        "dropOffAddressStreet": StringAttribute, //
+        "dropOffAddressStreetInKana": StringAttribute, //
+        "dropOffAddressStreetNumber": StringAttribute, //
+        "dropOffAddressValidFrom": StringAttribute, //
+        "dropOffAddressValidTo": StringAttribute, //
+        "dropOffAddressTimeZone": StringAttribute, //
+        "pickupPostalAddressRecId": UUIDAttribute, //
+        "pickupAddressLocationId": UUIDAttribute, //
+        "formattedPickupAddress": StringAttribute, //
+        "pickupAddressZipCode": StringAttribute, //
+        "pickupAddressBuildingCompliment": StringAttribute, //
+        "pickupAddressCity": StringAttribute, //
+        "pickupAddressCityInKana": StringAttribute, //
+        "pickupAddressCountryRegionId": UUIDAttribute, //
+        "pickupAddressCountryRegionISOCode": StringAttribute, //
+        "pickupAddressCountyId": UUIDAttribute, //
+        "pickupAddressDescription": StringAttribute, //
+        "pickupAddressDistrictName": StringAttribute, //
+        "pickupAddressDunsNumber": StringAttribute, //
+        "pickupAddressLatitude": StringAttribute, //
+        "isPickupAddressPrivate": StringAttribute, //
+        "pickupAddressLongitude": StringAttribute, //
+        "pickupAddressPostBox": StringAttribute, //
+        "pickupAddressStateId": UUIDAttribute, //
+        "pickupAddressStreet": StringAttribute, //
+        "pickupAddressStreetInKana": StringAttribute, //
+        "pickupAddressStreetNumber": StringAttribute, //
+        "pickupAddressValidFrom": StringAttribute, //
+        "pickupAddressValidTo": StringAttribute, //
+        "pickupAddressTimeZone": StringAttribute, //
+        "loadCustomerAccountNumber": StringAttribute, //
+        "loadVendorAccountNumber": StringAttribute, //
+        "loadSalesOrderNumber": StringAttribute, //
+        "loadPurchaseOrderNumber": StringAttribute, //
+        "relationship_ShippingCarrierVendorRelationshipId": UUIDAttribute, //
+        "relationship_LoadCustomerRelationshipId": UUIDAttribute, //
+        "relationship_LoadVendorRelationshipId": UUIDAttribute, //
+        "relationship_AccessorialChargeMasterRelationshipId": UUIDAttribute, //
+        "relationship_ShippingCarrierRelationshipId": UUIDAttribute, //
+        "relationship_TransportationBillingGroupRelationshipId": UUIDAttribute, //
+        "relationship_TransportationEquipmentRelationshipId": UUIDAttribute, //
+        "relationship_TransportationHubRelationshipId": UUIDAttribute, //
+        "relationship_TransportationModeRelationshipId": UUIDAttribute, //
+        "relationship_FreightBillTypeRelationshipId": UUIDAttribute, //
+        "backingTable_TMSFreightBillDetailRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_freightbilldetails");
   }
 }
 mixin(EntityCalls!("TransportationFreightBillDetailEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFreightBillDetailEntity);
   
-  auto entity = TMSFreightBillDetailEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSFreightBillDetailEntity;
+    // TODO more tests
   }
 }

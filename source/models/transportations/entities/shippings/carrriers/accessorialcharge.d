@@ -11,32 +11,26 @@ class DTransportationShippingCarrierAccessorialChargeEntity : DOOPEntity {
 
     this
       .addValues([
-        "AccessorialChargeMasterCode": StringAttribute, //
-        "TransportationBillingGroupId": UUIDAttribute, //
-        "ChargeId": UUIDAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "ShippingCarrierServiceId": UUIDAttribute, //
-        "ExternalChargeCode": StringAttribute, //
-        "AccessorialDeliveryType": StringAttribute, //
-        "BackingTable_TMSCarrierAccessorialRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
+        "accessorialChargeMasterCode": StringAttribute, //
+        "transportationBillingGroupId": UUIDAttribute, //
+        "chargeId": UUIDAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "shippingCarrierServiceId": UUIDAttribute, //
+        "externalChargeCode": StringAttribute, //
+        "accessorialDeliveryType": StringAttribute, //
+        "backingTable_TMSCarrierAccessorialRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_shippingcarrieraccessorialcharges");
   }
 }
 mixin(EntityCalls!("TransportationShippingCarrierAccessorialChargeEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TransportationShippingCarrierAccessorialChargeEntity);
   
-  auto entity = TransportationShippingCarrierAccessorialChargeEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TransportationShippingCarrierAccessorialChargeEntity;
+    // TODO more tests    
   }
 }

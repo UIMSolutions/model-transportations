@@ -11,27 +11,21 @@ class DTransportationAppointmentChangeReasonCodeEntity : DOOPEntity {
 
     this
       .addValues([
-        "ReasonDescription": StringAttribute, //
-        "ReasonCode": StringAttribute, //
-        "BackingTable_TMSChangeReasonRelationshipId": StringAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId":	StringAttribute, //
+        "reasonDescription": StringAttribute, //
+        "reasonCode": StringAttribute, //
+        "backingTable_TMSChangeReasonRelationshipId": StringAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId":	StringAttribute, //
       ])
       .registerPath("transportation_accessorialchargemasters");
   }
 }
 mixin(EntityCalls!("transportation_appointmentchangereasoncodes"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSAccessorialChargeMasterEntity);
   
-  auto entity = TMSAccessorialChargeMasterEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSAccessorialChargeMasterEntity;    
+    // TODO more tests
   }
 }

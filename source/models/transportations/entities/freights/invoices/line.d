@@ -11,70 +11,64 @@ class DTransportationFreightInvoiceLineEntity : DOOPEntity {
 
     this
       .addValues([
-        "DestinationCountryRegionId": UUIDAttribute, //
-        "TransportationBillingGroupId": UUIDAttribute, //
-        "BillOfLadingId": UUIDAttribute, //
-        "BookingNumber": StringAttribute, //
-        "ShippingCarrierId": UUIDAttribute, //
-        "ShippingCarrierServiceId": UUIDAttribute, //
-        "CosigneeName": StringAttribute, //
-        "DestinationCountryRegionISOCode": StringAttribute, //
-        "LastCycleCountingDateTime": StringAttribute, //
-        "DescriptionLine2": StringAttribute, //
-        "DescriptionLine1": StringAttribute, //
-        "TransportationDistance": StringAttribute, //
-        "ExternalCode": StringAttribute, //
-        "FreightBillTypeId": UUIDAttribute, //
-        "IsLineHeaderCharge": StringAttribute, //
-        "WarehouseId": UUIDAttribute, //
-        "InventorySiteId": UUIDAttribute, //
-        "InvoiceDate": StringAttribute, //
-        "LineStatus": StringAttribute, //
-        "ItemNumber": StringAttribute, //
-        "LineNumber": StringAttribute, //
-        "LineType": StringAttribute, //
-        "LoadId": UUIDAttribute, //
-        "DeliveryModeCode": StringAttribute, //
-        "NetAmount": StringAttribute, //
-        "ProNumberCode": StringAttribute, //
-        "FreightQuantity": StringAttribute, //
-        "TMSFreightInvoiceRecId": UUIDAttribute, //
-        "RelatedAccountNumber": StringAttribute, //
-        "RelatedOrderNumber": StringAttribute, //
-        "TransportationRouteCode": StringAttribute, //
-        "TrackingNumber": StringAttribute, //
-        "ShipmentId": UUIDAttribute, //
-        "FreightHeldUntilDateTime": StringAttribute, //
-        "TrailerNumber": StringAttribute, //
-        "UnitPrice": StringAttribute, //
-        "FreightWeightUnitId": UUIDAttribute, //
-        "ShippingCarrierVendorAccountNumber": StringAttribute, //
-        "InvoiceVendorAccountNumber": StringAttribute, //
-        "VesselName": StringAttribute, //
-        "VoyageNumber": StringAttribute, //
-        "FreightWeight": StringAttribute, //
-        "Direction": StringAttribute, //
+        "destinationCountryRegionId": UUIDAttribute, //
+        "transportationBillingGroupId": UUIDAttribute, //
+        "billOfLadingId": UUIDAttribute, //
+        "bookingNumber": StringAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
+        "shippingCarrierServiceId": UUIDAttribute, //
+        "cosigneeName": StringAttribute, //
+        "destinationCountryRegionISOCode": StringAttribute, //
+        "lastCycleCountingDateTime": StringAttribute, //
+        "descriptionLine2": StringAttribute, //
+        "descriptionLine1": StringAttribute, //
+        "transportationDistance": StringAttribute, //
+        "externalCode": StringAttribute, //
+        "freightBillTypeId": UUIDAttribute, //
+        "isLineHeaderCharge": StringAttribute, //
+        "warehouseId": UUIDAttribute, //
+        "inventorySiteId": UUIDAttribute, //
+        "invoiceDate": StringAttribute, //
+        "lineStatus": StringAttribute, //
+        "itemNumber": StringAttribute, //
+        "lineNumber": StringAttribute, //
+        "lineType": StringAttribute, //
+        "loadId": UUIDAttribute, //
+        "deliveryModeCode": StringAttribute, //
+        "netAmount": StringAttribute, //
+        "proNumberCode": StringAttribute, //
+        "freightQuantity": StringAttribute, //
+        "freightInvoiceRecId": UUIDAttribute, //
+        "relatedAccountNumber": StringAttribute, //
+        "relatedOrderNumber": StringAttribute, //
+        "transportationRouteCode": StringAttribute, //
+        "trackingNumber": StringAttribute, //
+        "shipmentId": UUIDAttribute, //
+        "freightHeldUntilDateTime": StringAttribute, //
+        "trailerNumber": StringAttribute, //
+        "unitPrice": StringAttribute, //
+        "freightWeightUnitId": UUIDAttribute, //
+        "shippingCarrierVendorAccountNumber": StringAttribute, //
+        "invoiceVendorAccountNumber": StringAttribute, //
+        "vesselName": StringAttribute, //
+        "voyageNumber": StringAttribute, //
+        "freightWeight": StringAttribute, //
+        "direction": StringAttribute, //
         "InternalInvoiceNumber": StringAttribute, //
-        "Relationship_FreightInvoiceHeaderRelationshipId": UUIDAttribute, //
-        "BackingTable_TMSInvoiceLineRelationshipId": UUIDAttribute, //
-        "Relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //		
+        "relationship_FreightInvoiceHeaderRelationshipId": UUIDAttribute, //
+        "backingTable_TMSInvoiceLineRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //		
       ])
       .registerPath("transportation_freightinvoicelines");
   }
 }
 mixin(EntityCalls!("TransportationFreightInvoiceLineEntity"));
 
-version(test_model_portals) {
+version(test_model_transportation) {
   unittest {
     assert(TMSFreightInvoiceLineEntity);
   
-  auto entity = TMSFreightInvoiceLineEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TMSFreightInvoiceLineEntity;
+    // TODO more tests
   }
 }
