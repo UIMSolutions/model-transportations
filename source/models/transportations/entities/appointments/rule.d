@@ -13,14 +13,14 @@ class DTransportationAppointmentRuleEntity : DOOPEntity {
       .addValues([
         "itemMovementDirectionRule": StringAttribute, //
         "maximumAppointmentsAllowed": StringAttribute, //
-        "appointmentRuleId": StringAttribute, //
+        "appointmentRuleId": UUIDAttribute, //
         "isDriverCheckInRequired": StringAttribute, //
         "defaultAppointmentDurationMinutes": StringAttribute, //
-        "appointmentWarehouseId": StringAttribute, //
-        "appointmentSiteId": StringAttribute, //
-        "appointmentCheckInCheckOutWarehouseLocationProfileId": StringAttribute, //
-        "backingTable_TMSCalendarTypeRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "appointmentWarehouseId": UUIDAttribute, //
+        "appointmentSiteId": UUIDAttribute, //
+        "appointmentCheckInCheckOutWarehouseLocationProfileId": UUIDAttribute, //
+        "backingTable_TMSCalendarTypeRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_appointmentrules");
   }

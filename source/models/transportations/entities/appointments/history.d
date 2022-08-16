@@ -11,7 +11,7 @@ class DTransportationAppointmentHistoryEntity : DOOPEntity {
 
     this
       .addValues([
-        "appointmentId": StringAttribute, //
+        "appointmentId": UUIDAttribute, //
         "appointmentNote": StringAttribute, //
         "appointmentStatus": StringAttribute, //
         "appointmentStatusReason": StringAttribute, //
@@ -23,14 +23,14 @@ class DTransportationAppointmentHistoryEntity : DOOPEntity {
         "tractorNumber": StringAttribute, //
         "trailerNumber": StringAttribute, //
         "transportationAppointmentHistoryEntryNumber": StringAttribute, //
-        "transportationAppointmentRuleId": StringAttribute, //
-        "transportationBrokerId": StringAttribute, //
-        "transportationCarrierId": StringAttribute, //
-        "loadId": StringAttribute, //
+        "transportationAppointmentRuleId": UUIDAttribute, //
+        "transportationBrokerId": UUIDAttribute, //
+        "transportationCarrierId": UUIDAttribute, //
+        "loadId": UUIDAttribute, //
         "purchaseOrderNumber": StringAttribute, //
         "salesOrderNumber": StringAttribute, //
-        "backingTable_TMSApptHistoryRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_TMSApptHistoryRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_appointmenthistories");
   }

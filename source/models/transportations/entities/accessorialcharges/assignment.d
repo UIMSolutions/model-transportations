@@ -14,9 +14,9 @@ class DTransportationAccessorialChargeMasterEntity : DOOPEntity {
         "chargeAssignmentLevel": StringAttribute, //
         "willChargeCalculationIncludeTransportationDiscounts": StringAttribute, //
         "areChargeAssignmentCriteriaIgnored": StringAttribute, //
-        "transportationBillingGroupId": StringAttribute, //
-        "shippingCarrierAccessorialChargeId": StringAttribute, //
-        "shippingCarrierId": StringAttribute, //
+        "transportationBillingGroupId": UUIDAttribute, //
+        "shippingCarrierAccessorialChargeId": UUIDAttribute, //
+        "shippingCarrierId": UUIDAttribute, //
         "addressCountryRegionIdCriterion": StringAttribute, //
         "chargeCurrencyCode": StringAttribute, //
         "orderingCustomerAccountNumberCriterion": StringAttribute, //
@@ -27,13 +27,13 @@ class DTransportationAccessorialChargeMasterEntity : DOOPEntity {
         "flatChargeAmount": StringAttribute, //
         "chargeType": StringAttribute, //
         "deliveryTermsCodeCriterion": StringAttribute, //
-        "fuelSurchargeFuelIndexRegionId": StringAttribute, //
-        "transportationHubAccessorialChargeId": StringAttribute, //
-        "transportationHubId": StringAttribute, //
+        "fuelSurchargeFuelIndexRegionId": UUIDAttribute, //
+        "transportationHubAccessorialChargeId": UUIDAttribute, //
+        "transportationHubId": UUIDAttribute, //
         "shippingWarehouseIdCriterion": StringAttribute, //
         "shippingSiteIdCriterion": StringAttribute, //
         "maximumChargeAmount": StringAttribute, //
-        "chargeTransportationMileageEngineId": StringAttribute, //
+        "chargeTransportationMileageEngineId": UUIDAttribute, //
         "minimumChargeAmount": StringAttribute, //
         "chargeAssignmentName": StringAttribute, //
         "fuelSurchargeOffsetDays": StringAttribute, //
@@ -50,8 +50,8 @@ class DTransportationAccessorialChargeMasterEntity : DOOPEntity {
         "minimumFreightWeightCriterion": StringAttribute, //
         "transportationZoneIdCriterion": StringAttribute, //
         "transportationZoneMasterCodeCriterion": StringAttribute, //
-        "backingTable_TMSAccessorialAssignmentRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_TMSAccessorialAssignmentRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
       .registerPath("transportation_accessorialchargeassignments");
   }

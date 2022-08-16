@@ -13,14 +13,14 @@ class DTransportationAppointmentDriverLogEntity : DOOPEntity {
       .addValues([
         "actualAppointmentEndDateTime": StringAttribute, //
         "actualAppointmentStartDateTime": StringAttribute, //
-        "appointmentId": StringAttribute, //
+        "appointmentId": UUIDAttribute, //
         "driverLicense": StringAttribute, //
         "driverName": StringAttribute, //
         "isDropTrailerAllowed": StringAttribute, //
         "shippingCarrierVendorAccountNumber": StringAttribute, //
         "transportationAppointmentAlertRule": StringAttribute, //
-        "backingTable_TMSDriverLogRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_TMSDriverLogRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
      ])
       .registerPath("transportation_appointmentdriverlogs");
   }

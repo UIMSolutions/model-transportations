@@ -11,16 +11,16 @@ class DTransportationAppointmentEntity : DOOPEntity {
 
     this
       .addValues([
-        "appointmentSiteId": StringAttribute, //
-        "appointmentWarehouseId": StringAttribute, //
-        "appointmentWarehouseLocationId": StringAttribute, //
-        "appointmentId": StringAttribute, //
+        "appointmentSiteId": UUIDAttribute, //
+        "appointmentWarehouseId": UUIDAttribute, //
+        "appointmentWarehouseLocationId": UUIDAttribute, //
+        "appointmentId": UUIDAttribute, //
         "appointmentName": StringAttribute, //
         "appointmentNote": StringAttribute, //
         "appointmentStatus": StringAttribute, //
         "customerAccountNumber": StringAttribute, //
         "isCustomerPickupAllowed": StringAttribute, //
-        "loadId": StringAttribute, //
+        "loadId": UUIDAttribute, //
         "plannedEndDateTime": StringAttribute, //
         "plannedStartDateTime": StringAttribute, //
         "productMovementDirectionRule": StringAttribute, //
@@ -29,14 +29,14 @@ class DTransportationAppointmentEntity : DOOPEntity {
         "shippingCarrierVendorAccountNumber": StringAttribute, //
         "tractorNumber": StringAttribute, //
         "trailerNumber": StringAttribute, //
-        "transportationAppointmentRuleId": StringAttribute, //
-        "transportationBrokerId": StringAttribute, //
-        "transportationCarrierId": StringAttribute, //
+        "transportationAppointmentRuleId": UUIDAttribute, //
+        "transportationBrokerId": UUIDAttribute, //
+        "transportationCarrierId": UUIDAttribute, //
         "vendorAccountNumber": StringAttribute, //
-        "relationship_CustomerRelationshipId": StringAttribute, //
-        "relationship_VendorRelationshipId": StringAttribute, //
-        "backingTable_TMSAppointmentRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //	
+        "relationship_CustomerRelationshipId": UUIDAttribute, //
+        "relationship_VendorRelationshipId": UUIDAttribute, //
+        "backingTable_TMSAppointmentRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //	
      ])
       .registerPath("transportation_appointmentdriverlogs");
   }

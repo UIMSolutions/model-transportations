@@ -13,7 +13,7 @@ class DTransportationAppointmentChangeReasonCodeEntity : DOOPEntity {
       .addValues([
         "reasonDescription": StringAttribute, //
         "reasonCode": StringAttribute, //
-        "backingTable_TMSChangeReasonRelationshipId": StringAttribute, //
+        "backingTable_TMSChangeReasonRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId":	StringAttribute, //
       ])
       .registerPath("transportation_accessorialchargemasters");
