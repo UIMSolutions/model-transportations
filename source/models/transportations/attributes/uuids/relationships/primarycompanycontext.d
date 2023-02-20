@@ -7,7 +7,7 @@ class DPrimaryCompanyContextRelationshipIdAttribute : DEntityIdAttribute {
   mixin(AttributeThis!("PrimaryCompanyContextRelationshipIdAttribute"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .name("primaryCompanyContextRelationshipId")

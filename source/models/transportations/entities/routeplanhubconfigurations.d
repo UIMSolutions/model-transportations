@@ -7,7 +7,7 @@ class DTransportationRoutePlanHubConfigurationEntity : DOOPEntity {
   mixin(EntityThis!("TransportationRoutePlanHubConfigurationEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,7 +7,7 @@ class DTransportationSalesDeliveryFreightChargeEntity : DOOPEntity {
   mixin(EntityThis!("TransportationSalesDeliveryFreightChargeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
