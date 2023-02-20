@@ -7,7 +7,7 @@ class DTransportationAppointmentEntity : DOOPEntity {
   mixin(EntityThis!("TransportationAppointmentEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

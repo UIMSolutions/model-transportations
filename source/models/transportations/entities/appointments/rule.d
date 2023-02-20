@@ -7,7 +7,7 @@ class DTransportationAppointmentRuleEntity : DOOPEntity {
   mixin(EntityThis!("TransportationAppointmentRuleEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

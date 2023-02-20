@@ -7,7 +7,7 @@ class DTransportationAppointmentChangeReasonCodeEntity : DOOPEntity {
   mixin(EntityThis!("TransportationAppointmentChangeReasonCodeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
