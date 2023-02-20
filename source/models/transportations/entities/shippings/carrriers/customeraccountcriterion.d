@@ -6,7 +6,7 @@ import models.transportations;
 class DTransportationShippingCarrierCustomerAccountCriterionEntity : DOOPEntity {
   mixin(EntityThis!("TransportationShippingCarrierCustomerAccountCriterionEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
