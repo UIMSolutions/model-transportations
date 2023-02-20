@@ -6,7 +6,7 @@ import models.transportations;
 class DTransportationAppointmentChangeReasonCodeEntity : DOOPEntity {
   mixin(EntityThis!("TransportationAppointmentChangeReasonCodeEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

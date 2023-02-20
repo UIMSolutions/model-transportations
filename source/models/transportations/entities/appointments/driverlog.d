@@ -6,7 +6,7 @@ import models.transportations;
 class DTransportationAppointmentDriverLogEntity : DOOPEntity {
   mixin(EntityThis!("TransportationAppointmentDriverLogEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
