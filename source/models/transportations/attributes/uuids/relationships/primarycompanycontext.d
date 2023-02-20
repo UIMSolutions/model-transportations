@@ -6,7 +6,7 @@ import models.workflows;
 class DPrimaryCompanyContextRelationshipIdAttribute : DEntityIdAttribute {
   mixin(AttributeThis!("PrimaryCompanyContextRelationshipIdAttribute"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
