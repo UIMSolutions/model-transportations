@@ -7,7 +7,7 @@ class DTransportationShippingCarrierPostalAddressEntity : DOOPEntity {
   mixin(EntityThis!("TransportationShippingCarrierPostalAddressEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
