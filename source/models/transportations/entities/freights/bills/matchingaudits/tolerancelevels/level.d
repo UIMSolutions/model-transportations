@@ -6,7 +6,7 @@ import models.transportations;
 class DTransportationFreightBillMatchingAuditToleranceLevelEntity : DOOPEntity {
   mixin(EntityThis!("TransportationFreightBillMatchingAuditToleranceLevelEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

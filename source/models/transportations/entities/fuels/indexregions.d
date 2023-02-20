@@ -6,7 +6,7 @@ import models.transportations;
 class DTransportationFuelIndexRegionEntity : DOOPEntity {
   mixin(EntityThis!("TransportationFuelIndexRegionEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
