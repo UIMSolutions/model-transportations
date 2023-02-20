@@ -7,7 +7,7 @@ class DTransportationFreightBillTypeDetailEntity : DOOPEntity {
   mixin(EntityThis!("TransportationFreightBillTypeDetailEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -7,7 +7,7 @@ class DTransportationFreightBillMatchingAuditToleranceLevelEntity : DOOPEntity {
   mixin(EntityThis!("TransportationFreightBillMatchingAuditToleranceLevelEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
