@@ -3,7 +3,7 @@ module models.transportations.entities.shippings.carriers;
 @safe:
 import models.transportations;
 
-class DTransportationShippingCarrierServiceGroupAssignmentEntity : DOOPEntity {
+class DTransportationShippingCarrierServiceGroupAssignmentEntity : DEntity {
   mixin(EntityThis!("TransportationShippingCarrierServiceGroupAssignmentEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
