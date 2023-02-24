@@ -44,8 +44,7 @@ class DTransportationSalesDeliveryFreightChargeEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationSalesDeliveryFreightChargeEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TransportationSalesDeliveryFreightChargeEntity);
   
     auto entity = TransportationSalesDeliveryFreightChargeEntity;

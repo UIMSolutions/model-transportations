@@ -58,8 +58,7 @@ class DTransportationAccessorialChargeMasterEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationAccessorialChargeAssignmentEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TransportationAccessorialChargeAssignmentEntity);
   
     auto entity = TransportationAccessorialChargeAssignmentEntity;

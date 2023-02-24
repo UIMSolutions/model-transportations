@@ -21,8 +21,7 @@ class DTransportationLateShipReasonEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationLateShipReasonEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TransportationLateShipReasonEntity);
   
     auto entity = TransportationLateShipReasonEntity;

@@ -25,8 +25,7 @@ class DTransportationRoutePlanHubConfigurationEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationRoutePlanHubConfigurationEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TransportationRoutePlanHubConfigurationEntity);
   
     auto entity = TransportationRoutePlanHubConfigurationEntity;
