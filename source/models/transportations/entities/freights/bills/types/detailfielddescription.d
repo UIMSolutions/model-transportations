@@ -24,8 +24,7 @@ class DTransportationFreightBillTypeDetailEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationFreightBillTypeDetailEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TMSFreightBillTypeDetailEntity);
   
     auto entity = TMSFreightBillTypeDetailEntity;

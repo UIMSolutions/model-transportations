@@ -33,8 +33,7 @@ class DTransportationFreightBillMatchingAuditToleranceLevelEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationFreightBillMatchingAuditToleranceLevelEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TMSFreightBillMatchingAuditToleranceLevelEntity);
   
     auto entity = TMSFreightBillMatchingAuditToleranceLevelEntity;

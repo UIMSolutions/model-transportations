@@ -64,8 +64,7 @@ class DTransportationFreightInvoiceHeaderEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationFreightInvoiceHeaderEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TMSFreightInvoiceHeaderEntity);
   
     auto entity = TMSFreightInvoiceHeaderEntity;

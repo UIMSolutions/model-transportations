@@ -21,8 +21,7 @@ class DTransportationFuelIndexRegionEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationFuelIndexRegionEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TMSFuelIndexRegionEntity);
   
   auto entity = TMSFuelIndexRegionEntity;
