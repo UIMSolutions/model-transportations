@@ -3,7 +3,7 @@ module models.transportations.entities.appointments.changereasoncode;
 @safe:
 import models.transportations;
 
-class DTransportationAppointmentChangeReasonCodeEntity : DOOPEntity {
+class DTransportationAppointmentChangeReasonCodeEntity : DEntity {
   mixin(EntityThis!("TransportationAppointmentChangeReasonCodeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

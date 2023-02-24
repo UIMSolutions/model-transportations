@@ -3,7 +3,7 @@ module models.transportations.entities.carriers.fuelindexline;
 @safe:
 import models.transportations;
 
-class DTransportationCarrierFuelIndexLineEntity : DOOPEntity {
+class DTransportationCarrierFuelIndexLineEntity : DEntity {
   mixin(EntityThis!("TransportationCarrierFuelIndexLineEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.transportations.entities.freights.bills.detail;
 @safe:
 import models.transportations;
 
-class DTransportationFreightBillDetailEntity : DOOPEntity {
+class DTransportationFreightBillDetailEntity : DEntity {
   mixin(EntityThis!("TransportationFreightBillDetailEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

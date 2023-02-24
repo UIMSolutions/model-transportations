@@ -3,7 +3,7 @@ module models.transportations.entities.freights.reconciliationreasoncode;
 @safe:
 import models.transportations;
 
-class DTransportationFreightReconciliationReasonCodeEntity : DOOPEntity {
+class DTransportationFreightReconciliationReasonCodeEntity : DEntity {
   mixin(EntityThis!("TransportationFreightReconciliationReasonCodeEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

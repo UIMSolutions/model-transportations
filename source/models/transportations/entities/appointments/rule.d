@@ -3,7 +3,7 @@ module models.transportations.entities.appointments.rule;
 @safe:
 import models.transportations;
 
-class DTransportationAppointmentRuleEntity : DOOPEntity {
+class DTransportationAppointmentRuleEntity : DEntity {
   mixin(EntityThis!("TransportationAppointmentRuleEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.transportations.entities.appointments.history;
 @safe:
 import models.transportations;
 
-class DTransportationAppointmentHistoryEntity : DOOPEntity {
+class DTransportationAppointmentHistoryEntity : DEntity {
   mixin(EntityThis!("TransportationAppointmentHistoryEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

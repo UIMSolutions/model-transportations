@@ -3,7 +3,7 @@ module models.transportations.entities.freights.bills.matchingaudits.tolerancele
 @safe:
 import models.transportations;
 
-class DTransportationFreightBillMatchingAuditToleranceLevelExceptionEntity : DOOPEntity {
+class DTransportationFreightBillMatchingAuditToleranceLevelExceptionEntity : DEntity {
   mixin(EntityThis!("TransportationFreightBillMatchingAuditToleranceLevelExceptionEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

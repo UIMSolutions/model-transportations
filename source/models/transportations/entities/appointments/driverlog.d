@@ -3,7 +3,7 @@ module models.transportations.entities.appointments.driverlog;
 @safe:
 import models.transportations;
 
-class DTransportationAppointmentDriverLogEntity : DOOPEntity {
+class DTransportationAppointmentDriverLogEntity : DEntity {
   mixin(EntityThis!("TransportationAppointmentDriverLogEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
