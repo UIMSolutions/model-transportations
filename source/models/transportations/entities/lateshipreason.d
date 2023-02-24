@@ -3,7 +3,7 @@ module models.transportations.entities.inventoryfreightcharge;
 @safe:
 import models.transportations;
 
-class DTransportationLateShipReasonEntity : DOOPEntity {
+class DTransportationLateShipReasonEntity : DEntity {
   mixin(EntityThis!("TransportationLateShipReasonEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

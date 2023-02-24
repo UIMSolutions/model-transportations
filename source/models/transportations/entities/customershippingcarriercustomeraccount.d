@@ -3,7 +3,7 @@ module models.transportations.entities.customershippingcarriercustomeraccount;
 @safe:
 import models.transportations;
 
-class DTransportationCustomerShippingCarrierCustomerAccountEntity : DOOPEntity {
+class DTransportationCustomerShippingCarrierCustomerAccountEntity : DEntity {
   mixin(EntityThis!("TransportationCustomerShippingCarrierCustomerAccountEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

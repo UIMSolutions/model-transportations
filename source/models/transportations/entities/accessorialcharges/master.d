@@ -3,7 +3,7 @@ module models.transportations.entities.accessorialchargemaster;
 @safe:
 import models.transportations;
 
-class DTransportationAccessorialChargeMasterEntity : DOOPEntity {
+class DTransportationAccessorialChargeMasterEntity : DEntity {
   mixin(EntityThis!("TransportationAccessorialChargeMasterEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
