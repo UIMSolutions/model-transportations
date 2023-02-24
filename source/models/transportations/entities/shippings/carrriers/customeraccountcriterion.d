@@ -25,8 +25,7 @@ class DTransportationShippingCarrierCustomerAccountCriterionEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationShippingCarrierCustomerAccountCriterionEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TransportationShippingCarrierCustomerAccountCriterionEntity);
   
     auto entity = TransportationShippingCarrierCustomerAccountCriterionEntity;

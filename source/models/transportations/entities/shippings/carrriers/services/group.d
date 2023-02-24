@@ -21,8 +21,7 @@ class DTransportationShippingCarrierServiceGroupEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationShippingCarrierServiceGroupEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TransportationShippingCarrierServiceGroupEntity);
   
   auto entity = TransportationShippingCarrierServiceGroupEntity;
