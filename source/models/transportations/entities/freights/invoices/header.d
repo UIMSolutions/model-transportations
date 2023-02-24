@@ -3,7 +3,7 @@ module models.transportations.entities.freights.invoices.header;
 @safe:
 import models.transportations;
 
-class DTransportationFreightInvoiceHeaderEntity : DOOPEntity {
+class DTransportationFreightInvoiceHeaderEntity : DEntity {
   mixin(EntityThis!("TransportationFreightInvoiceHeaderEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

@@ -3,7 +3,7 @@ module models.transportations.entities.fuels.indexregion;
 @safe:
 import models.transportations;
 
-class DTransportationFuelIndexRegionEntity : DOOPEntity {
+class DTransportationFuelIndexRegionEntity : DEntity {
   mixin(EntityThis!("TransportationFuelIndexRegionEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

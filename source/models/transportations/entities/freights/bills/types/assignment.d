@@ -3,7 +3,7 @@ module models.transportations.entities.freights.bills.types.assignment;
 @safe:
 import models.transportations;
 
-class DTransportationFreightBillTypeAssignmentEntity : DOOPEntity {
+class DTransportationFreightBillTypeAssignmentEntity : DEntity {
   mixin(EntityThis!("TransportationFreightBillTypeAssignmentEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

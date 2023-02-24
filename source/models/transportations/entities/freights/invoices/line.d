@@ -3,7 +3,7 @@ module models.transportations.entities.freights.invoices.line;
 @safe:
 import models.transportations;
 
-class DTransportationFreightInvoiceLineEntity : DOOPEntity {
+class DTransportationFreightInvoiceLineEntity : DEntity {
   mixin(EntityThis!("TransportationFreightInvoiceLineEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
