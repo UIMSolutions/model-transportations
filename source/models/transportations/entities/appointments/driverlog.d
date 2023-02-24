@@ -27,8 +27,7 @@ class DTransportationAppointmentDriverLogEntity : DEntity {
 }
 mixin(EntityCalls!("transportation_appointmentchangereasoncodes"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TMSAccessorialChargeMasterEntity);
   
     auto entity = TMSAccessorialChargeMasterEntity;

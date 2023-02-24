@@ -26,8 +26,7 @@ class DTransportationCarrierFuelIndexLineEntity : DEntity {
 }
 mixin(EntityCalls!("TransportationCarrierFuelIndexLineEntity"));
 
-version(test_model_transportation) {
-  unittest {
+version(test_model_transportations) { unittest {
     assert(TMSAccessorialChargeMasterEntity);
   
     auto entity = TMSAccessorialChargeMasterEntity;
