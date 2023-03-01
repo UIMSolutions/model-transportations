@@ -46,12 +46,12 @@ class DTransportationAppointmentEntity : DEntity {
       .registerPath("transportation_appointmentdriverlogs");
   }
 }
-mixin(EntityCalls!("transportation_appointmentchangereasoncodes"));
+mixin(EntityCalls!("TransportationAppointmentEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSAccessorialChargeMasterEntity);
+    assert(TransportationAppointmentEntity);
   
-    auto entity = TMSAccessorialChargeMasterEntity;
+    auto entity = TransportationAppointmentEntity;
     // TODO more tests
   }
 }

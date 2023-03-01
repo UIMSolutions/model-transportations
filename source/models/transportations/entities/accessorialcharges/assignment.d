@@ -8,7 +8,7 @@ module models.transportations.entities.accessorialcharges.assignment;
 @safe:
 import models.transportations;
 
-class DTransportationAccessorialChargeMasterEntity : DEntity {
+class DTransportationAccessorialChargeAssignmentEntity : DEntity {
   mixin(EntityThis!("TransportationAccessorialChargeAssignmentEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

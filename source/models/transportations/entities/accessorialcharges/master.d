@@ -25,12 +25,11 @@ class DTransportationAccessorialChargeMasterEntity : DEntity {
       .registerPath("transportation_accessorialchargemasters");
   }
 }
-mixin(EntityCalls!("TMSAccessorialChargeMasterEntity"));
+mixin(EntityCalls!("TransportationAccessorialChargeMasterEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSAccessorialChargeMasterEntity);
-  
-    auto entity = TMSAccessorialChargeMasterEntity;
+  assert(TransportationAccessorialChargeMasterEntity);
+
+  auto entity = TransportationAccessorialChargeMasterEntity;
     // TODO more tests    
-  }
-}
+}}

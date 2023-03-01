@@ -27,9 +27,8 @@ class DTransportationDockDoorAppointmentChangeReasonEntity : DEntity {
 mixin(EntityCalls!("TransportationDockDoorAppointmentChangeReasonEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TransportationDockDoorAppointmentChangeReasonEntity);
-  
-    uto entity = TransportationDockDoorAppointmentChangeReasonEntity;
-    // TODO more tests
-  }
-}
+  assert(TransportationDockDoorAppointmentChangeReasonEntity);
+
+  auto entity = TransportationDockDoorAppointmentChangeReasonEntity;
+  // TODO more tests
+}}

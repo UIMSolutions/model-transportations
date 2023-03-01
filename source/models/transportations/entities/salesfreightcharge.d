@@ -42,7 +42,6 @@ class DTransportationSalesFreightChargeEntity : DEntity {
         "relationship_SalesChargeRelationshipId": UUIDAttribute, //
         "BackingTable_TMSMiscellaneousChargeRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
-
       ])
       .registerPath("transportation_salesfreightcharges");
   }
@@ -50,9 +49,8 @@ class DTransportationSalesFreightChargeEntity : DEntity {
 mixin(EntityCalls!("TransportationSalesFreightChargeEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TransportationSalesFreightChargeEntity);
-  
-    auto entity = TransportationSalesFreightChargeEntity;
+  assert(TransportationSalesFreightChargeEntity);
+
+  auto entity = TransportationSalesFreightChargeEntity;
     // TODO more tests
-  }
-}
+}}
