@@ -51,9 +51,8 @@ class DTransportationShippingCarrierPostalAddressEntity : DEntity {
 mixin(EntityCalls!("TransportationShippingCarrierPostalAddressEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TransportationShippingCarrierPostalAddressEntity);
-  
-    auto entity = TransportationShippingCarrierPostalAddressEntity;
-    // TODO more tests
-  }
-}
+  assert(TransportationShippingCarrierPostalAddressEntity);
+
+  auto entity = TransportationShippingCarrierPostalAddressEntity;
+  // TODO more tests
+}}

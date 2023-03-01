@@ -70,9 +70,9 @@ class DTransportationFreightInvoiceLineEntity : DEntity {
 mixin(EntityCalls!("TransportationFreightInvoiceLineEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSFreightInvoiceLineEntity);
+    assert(TransportationFreightInvoiceLineEntity);
   
-    auto entity = TMSFreightInvoiceLineEntity;
+    auto entity = TransportationFreightInvoiceLineEntity;
     // TODO more tests
   }
 }

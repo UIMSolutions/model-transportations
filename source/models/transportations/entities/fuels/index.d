@@ -29,9 +29,9 @@ class DTransportationFuelIndexEntity : DEntity {
 mixin(EntityCalls!("TransportationFuelIndexEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSFuelIndexEntity);
+    assert(TransportationFuelIndexEntity);
   
-  auto entity = TMSFuelIndexEntity;
+  auto entity = TransportationFuelIndexEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

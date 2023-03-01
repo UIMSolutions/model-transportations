@@ -36,9 +36,8 @@ class DTransportationShippingCarrierRatingProfileEntity : DEntity {
 mixin(EntityCalls!("TransportationShippingCarrierRatingProfileEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TransportationShippingCarrierRatingProfileEntity);
-  
-    auto entity = TransportationShippingCarrierRatingProfileEntity;
-    // TODO more tests
-  }
-}
+  assert(TransportationShippingCarrierRatingProfileEntity);
+
+  auto entity = TransportationShippingCarrierRatingProfileEntity;
+  // TODO more tests
+}}

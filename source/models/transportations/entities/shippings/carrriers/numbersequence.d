@@ -37,9 +37,8 @@ class DTransportationShippingCarrierNumberSequenceEntity : DEntity {
 mixin(EntityCalls!("TransportationShippingCarrierNumberSequenceEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TransportationShippingCarrierNumberSequenceEntity);
-  
-    auto entity = TransportationShippingCarrierNumberSequenceEntity;
-    // TODO more tests
-  }
-}
+  assert(TransportationShippingCarrierNumberSequenceEntity);
+
+  auto entity = TransportationShippingCarrierNumberSequenceEntity;
+  // TODO more tests
+}}
