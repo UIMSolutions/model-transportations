@@ -5,10 +5,22 @@
 **********************************************************************************************************/
 module models.transportations.entities;
 
-public import models.transportations.entities.carriers;
-public import models.transportations.entities.freights;
+public {
+	// Sub packages
+	import models.transportations.entities.accessorialcharges;
+	import models.transportations.entities.appointments;
+	import models.transportations.entities.carriers;
+	import models.transportations.entities.freights;
+	import models.transportations.entities.fuels;
+	import models.transportations.entities.shippings;
 
-public import models.transportations.entities.accessorialchargemaster;
-public import models.transportations.entities.customershippingcarriercustomeraccount;
-public import models.transportations.entities.dockdoorappointmentchangereason;
-
+	// Sub modules
+	import models.transportations.entities.customershippingcarriercustomeraccount;
+	import models.transportations.entities.dockdoorappointmentchangereason;
+	import models.transportations.entities.inventoryfreightcharge;
+	import models.transportations.entities.lateshipreason;
+	import models.transportations.entities.procurementfreightcharge;
+	import models.transportations.entities.routeplanhubconfigurations;
+	import models.transportations.entities.salesdeliveryfreightcharge;
+	import models.transportations.entities.salesfreightcharge;
+}

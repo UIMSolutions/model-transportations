@@ -3,10 +3,10 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.workflows.atributes.uuids.relationships.primarycompanycontext;
+module models.transportations.atributes.uuids.relationships.primarycompanycontext;
 
 @safe:
-import models.workflows;
+import models.transportations;
 
 class DPrimaryCompanyContextRelationshipIdAttribute : DEntityIdAttribute {
   mixin(AttributeThis!("PrimaryCompanyContextRelationshipIdAttribute"));
