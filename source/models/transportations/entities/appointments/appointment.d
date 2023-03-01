@@ -1,4 +1,4 @@
-module models.transportations.entities.appointments.changereasoncode;
+module models.transportations.entities.appointments.appointment;
 
 @safe:
 import models.transportations;
