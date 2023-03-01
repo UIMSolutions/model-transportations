@@ -125,9 +125,9 @@ class DTransportationFreightBillDetailEntity : DEntity {
 mixin(EntityCalls!("TransportationFreightBillDetailEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSFreightBillDetailEntity);
+    assert(TransportationFreightBillDetailEntity);
   
-    auto entity = TMSFreightBillDetailEntity;
+    auto entity = TransportationFreightBillDetailEntity;
     // TODO more tests
   }
 }

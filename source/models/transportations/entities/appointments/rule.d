@@ -33,8 +33,8 @@ class DTransportationAppointmentRuleEntity : DEntity {
 mixin(EntityCalls!("TransportationAppointmentRuleEntity"));
 
 version(test_model_transportations) { unittest {
-  assert(TMSAccessorialChargeMasterEntity);
+  assert(TransportationAppointmentRuleEntity);
 
-  auto entity = TMSAccessorialChargeMasterEntity;
+  auto entity = TransportationAppointmentRuleEntity;
   // TODO more tests
 }}

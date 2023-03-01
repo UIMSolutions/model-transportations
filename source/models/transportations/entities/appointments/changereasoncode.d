@@ -24,12 +24,12 @@ class DTransportationAppointmentChangeReasonCodeEntity : DEntity {
       .registerPath("transportation_accessorialchargemasters");
   }
 }
-mixin(EntityCalls!("transportation_appointmentchangereasoncodes"));
+mixin(EntityCalls!("TransportationAppointmentChangeReasonCodeEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSAccessorialChargeMasterEntity);
+    assert(TransportationAppointmentChangeReasonCodeEntity);
   
-    auto entity = TMSAccessorialChargeMasterEntity;    
+    auto entity = TransportationAppointmentChangeReasonCodeEntity;    
     // TODO more tests
   }
 }

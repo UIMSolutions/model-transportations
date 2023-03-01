@@ -33,9 +33,8 @@ class DTransportationFreightReconciliationReasonCodeEntity : DEntity {
 mixin(EntityCalls!("TransportationFreightReconciliationReasonCodeEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSFreightReconciliationReasonCodeEntity);
-  
-    auto entity = TMSFreightReconciliationReasonCodeEntity;
-    // TODO more tests
-  }
-}
+  assert(TransportationFreightReconciliationReasonCodeEntity);
+
+  auto entity = TransportationFreightReconciliationReasonCodeEntity;
+  // TODO more tests
+}}

@@ -27,9 +27,9 @@ class DTransportationCarrierFuelIndexEntity : DEntity {
 mixin(EntityCalls!("TransportationCarrierFuelIndexEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSCarrierFuelIndexEntity);
+    assert(TransportationCarrierFuelIndexEntity);
   
-    auto entity = TMSCarrierFuelIndexEntity;
+    auto entity = TransportationCarrierFuelIndexEntity;
     // TODO more tests
   }
 }
