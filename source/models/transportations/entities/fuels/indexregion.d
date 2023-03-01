@@ -3,33 +3,39 @@
 	License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
 	Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module models.transportations.entities.lateshipreason;
+module models.transportations.entities.fuels.indexregion;
 
 @safe:
 import models.transportations;
 
-class DTransportationLateShipReasonEntity : DEntity {
-  mixin(EntityThis!("TransportationLateShipReasonEntity"));
+class DTransportationFuelIndexRegionEntity : DEntity {
+  mixin(EntityThis!("TransportationFuelIndexRegionEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
       .addValues([
-        "reasonCode": StringAttribute, //
-        "reasonDescription": StringAttribute, //
-        "backingTable_TMSLateShipReasonRelationshipId": UUIDAttribute, //
+        "regionId": UUIDAttribute, //
+        "regionName": StringAttribute, //
+        "backingTable_TMSFuelIndexRegionRelationshipId": UUIDAttribute, //
         "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
       ])
-      .registerPath("transportation_lateshipreasons");
+      .registerPath("transportation_fuelindexregions");
   }
 }
-mixin(EntityCalls!("TransportationLateShipReasonEntity"));
+mixin(EntityCalls!("TransportationFuelIndexRegionEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TransportationLateShipReasonEntity);
+    assert(TMSFuelIndexRegionEntity);
   
-    auto entity = TransportationLateShipReasonEntity;
-    // TODO more tests
+  auto entity = TMSFuelIndexRegionEntity;
+  // auto repository = OOPFileRepository("./tests");
+/*  repository.create("entities", entity.entityClasses, entity.toJson);
+
+  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
+  assert(json != Json(null), entity.id.toString~" not found");
+
+  repository.cleanupConnections; */
   }
 }

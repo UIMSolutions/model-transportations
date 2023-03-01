@@ -5,4 +5,6 @@
 **********************************************************************************************************/
 module models.transportations.attributes.uuids.relationsships;
 
+public import models.transportations.attributes.uuids.relationsships.primarycompanycontext;
+
 
