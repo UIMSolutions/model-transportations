@@ -5,5 +5,6 @@
 **********************************************************************************************************/
 module models.transportations.entities.shippings;
 
-public import models.transportations.entities.shippings.carriers;
-
+public {
+	import models.transportations.entities.shippings.carriers;
+}
