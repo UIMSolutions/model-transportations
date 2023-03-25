@@ -43,9 +43,8 @@ class DTransportationAppointmentHistoryEntity : DEntity {
 mixin(EntityCalls!("TransportationAppointmentHistoryEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TMSAccessorialChargeMasterEntity);
-  
-    auto entity = TMSAccessorialChargeMasterEntity;
-    // TODO more tests
-  }
-}
+  assert(TMSAccessorialChargeMasterEntity);
+
+  auto entity = TMSAccessorialChargeMasterEntity;
+  // TODO more tests
+}}

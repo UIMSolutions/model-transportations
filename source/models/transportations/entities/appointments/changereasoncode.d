@@ -27,9 +27,8 @@ class DTransportationAppointmentChangeReasonCodeEntity : DEntity {
 mixin(EntityCalls!("TransportationAppointmentChangeReasonCodeEntity"));
 
 version(test_model_transportations) { unittest {
-    assert(TransportationAppointmentChangeReasonCodeEntity);
-  
-    auto entity = TransportationAppointmentChangeReasonCodeEntity;    
-    // TODO more tests
-  }
-}
+  assert(TransportationAppointmentChangeReasonCodeEntity);
+
+  auto entity = TransportationAppointmentChangeReasonCodeEntity;    
+  // TODO more tests
+}}

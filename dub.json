@@ -1,6 +1,6 @@
 {
 	"authors": ["Ozan Nurettin Süel (Sicherheitsschmiede)"],
-	"copyright": "Copyright © 2017 - 2021, UI Manufaktur UG",
+	"copyright": "Copyright © 2015 - 2023, Ozan Nurettin Süel (Sicherheitsschmiede)",
 	"description": "Model for transportations applications",
 	"license": "Apache-2.0",
 	"name": "model-transportations",
@@ -8,22 +8,22 @@
 		"colored": "~>0.0.23",
 		"vibe-d": "~>0.9.5"
 	},
-		"sourcePaths": [
-			"../../LIBS/uim-core",
-			"../../LIBS/uim-oop",
-			"../../LIBS/uim-models",
-			"../../LIBS/uim-jsonbase",
-			"../../LIBS/uim-entitybase",
-				"./"
-		],
-		"importPaths": [
-			"../../LIBS/uim-core",
-			"../../LIBS/uim-oop",
-			"../../LIBS/uim-models",
-			"../../LIBS/uim-jsonbase",
-			"../../LIBS/uim-entitybase",
-			"./"
-		],
+	"sourcePaths": [
+		"../../LIBS/uim-core",
+		"../../LIBS/uim-oop",
+		"../../LIBS/uim-models",
+		"../../LIBS/uim-jsonbase",
+		"../../LIBS/uim-entitybase",
+		"./"
+	],
+	"importPaths": [
+		"../../LIBS/uim-core",
+		"../../LIBS/uim-oop",
+		"../../LIBS/uim-models",
+		"../../LIBS/uim-jsonbase",
+		"../../LIBS/uim-entitybase",
+		"./"
+	],
 	"configurations": [
 		{
 			"name": "offline"
